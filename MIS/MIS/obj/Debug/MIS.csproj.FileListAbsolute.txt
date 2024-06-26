@@ -1,0 +1,512 @@
+C:\Users\Juan\source\repos\MIS\MIS\bin\Debug\MIS.exe.config
+C:\Users\Juan\source\repos\MIS\MIS\bin\Debug\MIS.exe
+C:\Users\Juan\source\repos\MIS\MIS\bin\Debug\MIS.pdb
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.exe
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\Juan\source\repos\MIS\MIS\obj\Debug\MIS.Login.resources
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe.config
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\MIS.pdb
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Login.resources
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.dll
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.xml
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe.config
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.Up2Date
+C:\Users\chiri\OneDrive\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Inicio.resources
+\\26.28.58.192\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+\\26.28.58.192\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.SuggestedBindingRedirects.cache
+\\26.28.58.192\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe.config
+\\26.28.58.192\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe
+\\26.28.58.192\Documentos\ProyectoMIS\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe.config
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.pdb
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.dll
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.xml
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe.config
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Login.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Modelos.Registros.Modales.FormAgregarIngresos.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Configuracion.FormClientes.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.FormDashboard.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Inicio.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormRecepcion.resources
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.Up2Date
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\Juan\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarDescripciones.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Login.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarDescripciones.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Modelos.Registros.Modales.FormAgregarIngresos.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Configuracion.FormClientes.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.FormDashboard.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Inicio.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarIntervalos.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormBuscarCliente.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormRecepcion.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe.config
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.pdb
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\EnvDTE.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.Up2Date
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormReportes.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\stdole.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormSedes.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.dll
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.Camara.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormContactos.resources
+C:\Users\chiri\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormInspeccion.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Login.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.Camara.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarDescripciones.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Modelos.Registros.Modales.FormAgregarIngresos.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Configuracion.FormClientes.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.FormDashboard.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Inicio.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarIntervalos.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormBuscarCliente.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormContactos.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormSedes.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormInspeccion.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormRecepcion.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.exe
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe.config
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.exe
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\MIS.pdb
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\EnvDTE.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\Npgsql.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Buffers.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Memory.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Text.Json.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Channels.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\System.ValueTuple.xml
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.csproj.Up2Date
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\bin\Debug\stdole.dll
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormRecepciones.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormReportes.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormDuplicar.resources
+C:\Users\PROGRAMADOR\Downloads\PROYECTO LOCAL MIS\ProyectoMIS\MIS\MIS\obj\Debug\MIS.Vistas.Comercial.FormCotizacion.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\MIS.exe.config
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\MIS.exe
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\MIS.pdb
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\AForge.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\AForge.Video.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Npgsql.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Buffers.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Collections.Immutable.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Memory.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Text.Json.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Threading.Channels.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.ValueTuple.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\EnvDTE.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\stdole.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\AForge.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\AForge.Video.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Npgsql.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Buffers.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Collections.Immutable.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Memory.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Text.Json.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Threading.Channels.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.ValueTuple.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.csproj.AssemblyReference.cache
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Login.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Comercial.FormCotizacion.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.Camara.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarDescripciones.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Modelos.Registros.Modales.FormAgregarIngresos.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Properties.Resources.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Configuracion.FormClientes.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.FormDashboard.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Inicio.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAgregarIntervalos.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormBuscarCliente.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormContactos.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormDuplicar.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormRecepciones.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormReportes.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormSedes.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormInspeccion.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Recepcion.FormRecepcion.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.csproj.GenerateResource.cache
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.csproj.CoreCompileInputs.cache
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.csproj.Up2Date
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.exe
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.pdb
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Modales.FormAprobarCotizacion.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\PdfiumViewer.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\PdfiumViewer.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\nl\PdfiumViewer.resources.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\x86\pdfium.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\x64\pdfium.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\obj\Debug\MIS.Vistas.Laboratorio.FormOrdenTrabajo.resources
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\PROGRAMADOR\Downloads\MIS-01-04-2024\MIS\MIS\bin\Debug\Microsoft.Extensions.Primitives.xml

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Comercial\FormCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Configuracion\FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Laboratorio\FormOrdenTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Laboratorio\FormProcesoFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Laboratorio\FormSensor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\Camara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormAgregarDescripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormAgregarIngresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormAgregarIntervalos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormAprobarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormBuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormDuplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormRecepciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Modales\FormSedes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Recepcion\FormInspeccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Vistas\Recepcion\FormRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Reportes\dsHidrostatica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>
