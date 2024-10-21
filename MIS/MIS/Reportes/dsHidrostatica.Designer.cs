@@ -41,6 +41,8 @@ namespace MIS.Reportes {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+            " or extended by application code.", DiagnosticId="SYSLIB0051")]
         protected dsHidrostatica(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
@@ -311,8 +313,6 @@ namespace MIS.Reportes {
             
             private global::System.Data.DataColumn columnmarca;
             
-            private global::System.Data.DataColumn columnmodelo;
-            
             private global::System.Data.DataColumn columnserie;
             
             private global::System.Data.DataColumn columndimensiones;
@@ -324,6 +324,16 @@ namespace MIS.Reportes {
             private global::System.Data.DataColumn columntemini;
             
             private global::System.Data.DataColumn columntemfinal;
+            
+            private global::System.Data.DataColumn columnequipo;
+            
+            private global::System.Data.DataColumn columnpromedio_psi;
+            
+            private global::System.Data.DataColumn columnpromedio_tem;
+            
+            private global::System.Data.DataColumn columndelta;
+            
+            private global::System.Data.DataColumn columnerror_psi;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -353,6 +363,8 @@ namespace MIS.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
+                " or extended by application code.", DiagnosticId="SYSLIB0051")]
             protected prueba_hidrostaticaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
@@ -488,14 +500,6 @@ namespace MIS.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn modeloColumn {
-                get {
-                    return this.columnmodelo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn serieColumn {
                 get {
                     return this.columnserie;
@@ -539,6 +543,46 @@ namespace MIS.Reportes {
             public global::System.Data.DataColumn temfinalColumn {
                 get {
                     return this.columntemfinal;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn equipoColumn {
+                get {
+                    return this.columnequipo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn promedio_psiColumn {
+                get {
+                    return this.columnpromedio_psi;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn promedio_temColumn {
+                get {
+                    return this.columnpromedio_tem;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn deltaColumn {
+                get {
+                    return this.columndelta;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn error_psiColumn {
+                get {
+                    return this.columnerror_psi;
                 }
             }
             
@@ -596,13 +640,17 @@ namespace MIS.Reportes {
                         string psi_min, 
                         string psi_max, 
                         string marca, 
-                        string modelo, 
                         string serie, 
                         string dimensiones, 
                         string tem_min, 
                         string tem_max, 
                         string temini, 
-                        string temfinal) {
+                        string temfinal, 
+                        string equipo, 
+                        string promedio_psi, 
+                        string promedio_tem, 
+                        string delta, 
+                        string error_psi) {
                 prueba_hidrostaticaRow rowprueba_hidrostaticaRow = ((prueba_hidrostaticaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         cliente,
@@ -621,13 +669,17 @@ namespace MIS.Reportes {
                         psi_min,
                         psi_max,
                         marca,
-                        modelo,
                         serie,
                         dimensiones,
                         tem_min,
                         tem_max,
                         temini,
-                        temfinal};
+                        temfinal,
+                        equipo,
+                        promedio_psi,
+                        promedio_tem,
+                        delta,
+                        error_psi};
                 rowprueba_hidrostaticaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowprueba_hidrostaticaRow);
                 return rowprueba_hidrostaticaRow;
@@ -666,13 +718,17 @@ namespace MIS.Reportes {
                 this.columnpsi_min = base.Columns["psi_min"];
                 this.columnpsi_max = base.Columns["psi_max"];
                 this.columnmarca = base.Columns["marca"];
-                this.columnmodelo = base.Columns["modelo"];
                 this.columnserie = base.Columns["serie"];
                 this.columndimensiones = base.Columns["dimensiones"];
                 this.columntem_min = base.Columns["tem_min"];
                 this.columntem_max = base.Columns["tem_max"];
                 this.columntemini = base.Columns["temini"];
                 this.columntemfinal = base.Columns["temfinal"];
+                this.columnequipo = base.Columns["equipo"];
+                this.columnpromedio_psi = base.Columns["promedio_psi"];
+                this.columnpromedio_tem = base.Columns["promedio_tem"];
+                this.columndelta = base.Columns["delta"];
+                this.columnerror_psi = base.Columns["error_psi"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -710,8 +766,6 @@ namespace MIS.Reportes {
                 base.Columns.Add(this.columnpsi_max);
                 this.columnmarca = new global::System.Data.DataColumn("marca", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmarca);
-                this.columnmodelo = new global::System.Data.DataColumn("modelo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmodelo);
                 this.columnserie = new global::System.Data.DataColumn("serie", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnserie);
                 this.columndimensiones = new global::System.Data.DataColumn("dimensiones", typeof(string), null, global::System.Data.MappingType.Element);
@@ -724,6 +778,16 @@ namespace MIS.Reportes {
                 base.Columns.Add(this.columntemini);
                 this.columntemfinal = new global::System.Data.DataColumn("temfinal", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntemfinal);
+                this.columnequipo = new global::System.Data.DataColumn("equipo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnequipo);
+                this.columnpromedio_psi = new global::System.Data.DataColumn("promedio_psi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpromedio_psi);
+                this.columnpromedio_tem = new global::System.Data.DataColumn("promedio_tem", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpromedio_tem);
+                this.columndelta = new global::System.Data.DataColumn("delta", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndelta);
+                this.columnerror_psi = new global::System.Data.DataColumn("error_psi", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnerror_psi);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1125,22 +1189,6 @@ namespace MIS.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string modelo {
-                get {
-                    try {
-                        return ((string)(this[this.tableprueba_hidrostatica.modeloColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'modelo\' de la tabla \'prueba_hidrostatica\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableprueba_hidrostatica.modeloColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string serie {
                 get {
                     try {
@@ -1233,6 +1281,88 @@ namespace MIS.Reportes {
                 }
                 set {
                     this[this.tableprueba_hidrostatica.temfinalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string equipo {
+                get {
+                    try {
+                        return ((string)(this[this.tableprueba_hidrostatica.equipoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'equipo\' de la tabla \'prueba_hidrostatica\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableprueba_hidrostatica.equipoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string promedio_psi {
+                get {
+                    try {
+                        return ((string)(this[this.tableprueba_hidrostatica.promedio_psiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'promedio_psi\' de la tabla \'prueba_hidrostatica\' es DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableprueba_hidrostatica.promedio_psiColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string promedio_tem {
+                get {
+                    try {
+                        return ((string)(this[this.tableprueba_hidrostatica.promedio_temColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'promedio_tem\' de la tabla \'prueba_hidrostatica\' es DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableprueba_hidrostatica.promedio_temColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string delta {
+                get {
+                    try {
+                        return ((string)(this[this.tableprueba_hidrostatica.deltaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'delta\' de la tabla \'prueba_hidrostatica\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableprueba_hidrostatica.deltaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string error_psi {
+                get {
+                    try {
+                        return ((string)(this[this.tableprueba_hidrostatica.error_psiColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'error_psi\' de la tabla \'prueba_hidrostatica\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableprueba_hidrostatica.error_psiColumn] = value;
                 }
             }
             
@@ -1430,18 +1560,6 @@ namespace MIS.Reportes {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsmodeloNull() {
-                return this.IsNull(this.tableprueba_hidrostatica.modeloColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetmodeloNull() {
-                this[this.tableprueba_hidrostatica.modeloColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsserieNull() {
                 return this.IsNull(this.tableprueba_hidrostatica.serieColumn);
             }
@@ -1510,6 +1628,66 @@ namespace MIS.Reportes {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SettemfinalNull() {
                 this[this.tableprueba_hidrostatica.temfinalColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsequipoNull() {
+                return this.IsNull(this.tableprueba_hidrostatica.equipoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetequipoNull() {
+                this[this.tableprueba_hidrostatica.equipoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ispromedio_psiNull() {
+                return this.IsNull(this.tableprueba_hidrostatica.promedio_psiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setpromedio_psiNull() {
+                this[this.tableprueba_hidrostatica.promedio_psiColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ispromedio_temNull() {
+                return this.IsNull(this.tableprueba_hidrostatica.promedio_temColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setpromedio_temNull() {
+                this[this.tableprueba_hidrostatica.promedio_temColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsdeltaNull() {
+                return this.IsNull(this.tableprueba_hidrostatica.deltaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetdeltaNull() {
+                this[this.tableprueba_hidrostatica.deltaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iserror_psiNull() {
+                return this.IsNull(this.tableprueba_hidrostatica.error_psiColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Seterror_psiNull() {
+                this[this.tableprueba_hidrostatica.error_psiColumn] = global::System.Convert.DBNull;
             }
         }
         

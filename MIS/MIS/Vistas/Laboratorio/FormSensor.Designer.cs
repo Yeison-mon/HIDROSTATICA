@@ -39,19 +39,24 @@
             panelRecepcion = new System.Windows.Forms.Panel();
             Grafica = new OxyPlot.WindowsForms.PlotView();
             tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            cbEquipos = new System.Windows.Forms.ComboBox();
+            lbEquipos = new System.Windows.Forms.Label();
             cbModelos = new System.Windows.Forms.ComboBox();
-            lbModelos = new System.Windows.Forms.Label();
             txtDimensiones = new System.Windows.Forms.TextBox();
             txtSerie = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
-            lbEquipo = new System.Windows.Forms.Label();
+            lbHerramienta = new System.Windows.Forms.Label();
             cbHerraminetas = new System.Windows.Forms.ComboBox();
             cbMarcas = new System.Windows.Forms.ComboBox();
             lbMarca = new System.Windows.Forms.Label();
             label15 = new System.Windows.Forms.Label();
             txtObservacion = new System.Windows.Forms.TextBox();
             label12 = new System.Windows.Forms.Label();
+            panel6 = new System.Windows.Forms.Panel();
+            lbCronometro = new System.Windows.Forms.Label();
+            lbModelos = new System.Windows.Forms.Label();
             tableLayoutPanelContainer2 = new System.Windows.Forms.TableLayoutPanel();
+            cbMax = new System.Windows.Forms.ComboBox();
             label14 = new System.Windows.Forms.Label();
             lbCliente = new System.Windows.Forms.Label();
             txtCliente = new System.Windows.Forms.TextBox();
@@ -66,18 +71,21 @@
             btnDetener = new System.Windows.Forms.Button();
             txtMin = new System.Windows.Forms.TextBox();
             label2 = new System.Windows.Forms.Label();
-            txtMax = new System.Windows.Forms.TextBox();
-            txtTiempo = new System.Windows.Forms.TextBox();
             cbSensores = new System.Windows.Forms.ComboBox();
             label13 = new System.Windows.Forms.Label();
             dtFecha = new System.Windows.Forms.DateTimePicker();
             txtNro = new System.Windows.Forms.TextBox();
-            checkTemperatura = new System.Windows.Forms.CheckBox();
+            cbTiempo = new System.Windows.Forms.ComboBox();
+            panel4 = new System.Windows.Forms.Panel();
+            txtPresion = new System.Windows.Forms.TextBox();
+            panel5 = new System.Windows.Forms.Panel();
+            txtTemperatura = new System.Windows.Forms.TextBox();
             checkPSI = new System.Windows.Forms.CheckBox();
-            label10 = new System.Windows.Forms.Label();
-            label11 = new System.Windows.Forms.Label();
+            checkTemperatura = new System.Windows.Forms.CheckBox();
+            txtMax = new System.Windows.Forms.TextBox();
             tableLayoutPanelContenedorPrincipar = new System.Windows.Forms.TableLayoutPanel();
             panel2 = new System.Windows.Forms.Panel();
+            btnLimpiarParcial = new System.Windows.Forms.Button();
             btnExportar = new System.Windows.Forms.Button();
             btnImagen = new System.Windows.Forms.Button();
             btnCliente = new System.Windows.Forms.Button();
@@ -88,19 +96,18 @@
             tpConsultar = new System.Windows.Forms.TabPage();
             panel1 = new System.Windows.Forms.Panel();
             tablaConsulta = new System.Windows.Forms.DataGridView();
-            tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            label3 = new System.Windows.Forms.Label();
-            txtFiltro = new System.Windows.Forms.TextBox();
             tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            txtCInspeccion = new System.Windows.Forms.TextBox();
+            label9 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
             dtpCHasta = new System.Windows.Forms.DateTimePicker();
             dtpCDesde = new System.Windows.Forms.DateTimePicker();
             txtCNro = new System.Windows.Forms.TextBox();
             label7 = new System.Windows.Forms.Label();
             label6 = new System.Windows.Forms.Label();
             label4 = new System.Windows.Forms.Label();
-            label9 = new System.Windows.Forms.Label();
+            cbCCliente = new System.Windows.Forms.ComboBox();
+            txtCSerie = new System.Windows.Forms.TextBox();
             panel3 = new System.Windows.Forms.Panel();
             btnConsultar = new System.Windows.Forms.Button();
             toolTip1 = new System.Windows.Forms.ToolTip(components);
@@ -108,12 +115,14 @@
             tpRegistro.SuspendLayout();
             panelRecepcion.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
+            panel6.SuspendLayout();
             tableLayoutPanelContainer2.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
             panel2.SuspendLayout();
             tpConsultar.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)tablaConsulta).BeginInit();
-            tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel8.SuspendLayout();
             panel3.SuspendLayout();
             SuspendLayout();
@@ -127,7 +136,7 @@
             labelDescripcion.Location = new System.Drawing.Point(0, 0);
             labelDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             labelDescripcion.Name = "labelDescripcion";
-            labelDescripcion.Size = new System.Drawing.Size(1370, 74);
+            labelDescripcion.Size = new System.Drawing.Size(1492, 74);
             labelDescripcion.TabIndex = 1;
             labelDescripcion.Text = "PRUEBA HIDROSTATICA";
             labelDescripcion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +153,7 @@
             tcGeneral.Name = "tcGeneral";
             tcGeneral.Padding = new System.Drawing.Point(5, 3);
             tcGeneral.SelectedIndex = 0;
-            tcGeneral.Size = new System.Drawing.Size(1370, 894);
+            tcGeneral.Size = new System.Drawing.Size(1492, 675);
             tcGeneral.TabIndex = 3;
             tcGeneral.TabStop = false;
             // 
@@ -158,7 +167,7 @@
             tpRegistro.Location = new System.Drawing.Point(4, 28);
             tpRegistro.Margin = new System.Windows.Forms.Padding(0);
             tpRegistro.Name = "tpRegistro";
-            tpRegistro.Size = new System.Drawing.Size(1362, 862);
+            tpRegistro.Size = new System.Drawing.Size(1484, 643);
             tpRegistro.TabIndex = 0;
             tpRegistro.Text = "Registro";
             // 
@@ -176,16 +185,16 @@
             panelRecepcion.Margin = new System.Windows.Forms.Padding(0);
             panelRecepcion.Name = "panelRecepcion";
             panelRecepcion.Padding = new System.Windows.Forms.Padding(12, 30, 12, 12);
-            panelRecepcion.Size = new System.Drawing.Size(1345, 924);
+            panelRecepcion.Size = new System.Drawing.Size(1467, 924);
             panelRecepcion.TabIndex = 2;
             // 
             // Grafica
             // 
             Grafica.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            Grafica.Location = new System.Drawing.Point(12, 193);
+            Grafica.Location = new System.Drawing.Point(12, 232);
             Grafica.Name = "Grafica";
             Grafica.PanCursor = System.Windows.Forms.Cursors.Hand;
-            Grafica.Size = new System.Drawing.Size(1321, 400);
+            Grafica.Size = new System.Drawing.Size(1443, 361);
             Grafica.TabIndex = 15;
             Grafica.Text = "plotView1";
             Grafica.ZoomHorizontalCursor = System.Windows.Forms.Cursors.SizeWE;
@@ -201,18 +210,21 @@
             tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.016655F));
             tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.932627F));
             tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.5669956F));
+            tableLayoutPanel3.Controls.Add(cbEquipos, 5, 1);
+            tableLayoutPanel3.Controls.Add(lbEquipos, 4, 1);
             tableLayoutPanel3.Controls.Add(cbModelos, 5, 0);
-            tableLayoutPanel3.Controls.Add(lbModelos, 4, 0);
             tableLayoutPanel3.Controls.Add(txtDimensiones, 3, 1);
             tableLayoutPanel3.Controls.Add(txtSerie, 1, 1);
             tableLayoutPanel3.Controls.Add(label1, 0, 2);
-            tableLayoutPanel3.Controls.Add(lbEquipo, 0, 0);
+            tableLayoutPanel3.Controls.Add(lbHerramienta, 0, 0);
             tableLayoutPanel3.Controls.Add(cbHerraminetas, 1, 0);
             tableLayoutPanel3.Controls.Add(cbMarcas, 3, 0);
             tableLayoutPanel3.Controls.Add(lbMarca, 2, 0);
             tableLayoutPanel3.Controls.Add(label15, 0, 1);
             tableLayoutPanel3.Controls.Add(txtObservacion, 0, 3);
             tableLayoutPanel3.Controls.Add(label12, 2, 1);
+            tableLayoutPanel3.Controls.Add(panel6, 3, 3);
+            tableLayoutPanel3.Controls.Add(lbModelos, 5, 2);
             tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             tableLayoutPanel3.Location = new System.Drawing.Point(12, 599);
             tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -223,8 +235,37 @@
             tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.2389374F));
             tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 46.9026566F));
             tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tableLayoutPanel3.Size = new System.Drawing.Size(1321, 226);
+            tableLayoutPanel3.Size = new System.Drawing.Size(1443, 226);
             tableLayoutPanel3.TabIndex = 13;
+            // 
+            // cbEquipos
+            // 
+            cbEquipos.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cbEquipos.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            cbEquipos.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            cbEquipos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            cbEquipos.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            cbEquipos.FormattingEnabled = true;
+            cbEquipos.Location = new System.Drawing.Point(994, 37);
+            cbEquipos.Margin = new System.Windows.Forms.Padding(7, 0, 12, 0);
+            cbEquipos.Name = "cbEquipos";
+            cbEquipos.Size = new System.Drawing.Size(244, 27);
+            cbEquipos.TabIndex = 62;
+            // 
+            // lbEquipos
+            // 
+            lbEquipos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lbEquipos.BackColor = System.Drawing.Color.Transparent;
+            lbEquipos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lbEquipos.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            lbEquipos.Location = new System.Drawing.Point(859, 37);
+            lbEquipos.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            lbEquipos.Name = "lbEquipos";
+            lbEquipos.Size = new System.Drawing.Size(116, 22);
+            lbEquipos.TabIndex = 61;
+            lbEquipos.Text = "Equipo (+)";
+            lbEquipos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lbEquipos.Click += lbEquipos_Click;
             // 
             // cbModelos
             // 
@@ -234,33 +275,19 @@
             cbModelos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             cbModelos.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
             cbModelos.FormattingEnabled = true;
-            cbModelos.Location = new System.Drawing.Point(910, 0);
+            cbModelos.Location = new System.Drawing.Point(994, 0);
             cbModelos.Margin = new System.Windows.Forms.Padding(7, 0, 12, 0);
             cbModelos.Name = "cbModelos";
             cbModelos.Size = new System.Drawing.Size(244, 27);
             cbModelos.TabIndex = 20;
-            // 
-            // lbModelos
-            // 
-            lbModelos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            lbModelos.BackColor = System.Drawing.Color.Transparent;
-            lbModelos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lbModelos.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            lbModelos.Location = new System.Drawing.Point(786, 0);
-            lbModelos.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            lbModelos.Name = "lbModelos";
-            lbModelos.Size = new System.Drawing.Size(105, 22);
-            lbModelos.TabIndex = 19;
-            lbModelos.Text = "Modelos (+)";
-            lbModelos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            lbModelos.Click += lbModelos_Click;
+            cbModelos.Visible = false;
             // 
             // txtDimensiones
             // 
             txtDimensiones.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
             txtDimensiones.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtDimensiones.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            txtDimensiones.Location = new System.Drawing.Point(549, 37);
+            txtDimensiones.Location = new System.Drawing.Point(600, 37);
             txtDimensiones.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             txtDimensiones.Name = "txtDimensiones";
             txtDimensiones.Size = new System.Drawing.Size(185, 27);
@@ -272,7 +299,7 @@
             txtSerie.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
             txtSerie.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtSerie.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            txtSerie.Location = new System.Drawing.Point(140, 37);
+            txtSerie.Location = new System.Drawing.Point(153, 37);
             txtSerie.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             txtSerie.Name = "txtSerie";
             txtSerie.Size = new System.Drawing.Size(149, 27);
@@ -289,25 +316,25 @@
             label1.Location = new System.Drawing.Point(0, 72);
             label1.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(891, 30);
+            label1.Size = new System.Drawing.Size(975, 30);
             label1.TabIndex = 22;
             label1.Text = "Observación";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbEquipo
+            // lbHerramienta
             // 
-            lbEquipo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            lbEquipo.BackColor = System.Drawing.Color.Transparent;
-            lbEquipo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            lbEquipo.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            lbEquipo.Location = new System.Drawing.Point(0, 0);
-            lbEquipo.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            lbEquipo.Name = "lbEquipo";
-            lbEquipo.Size = new System.Drawing.Size(128, 22);
-            lbEquipo.TabIndex = 16;
-            lbEquipo.Text = "Herramienta (+)";
-            lbEquipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            lbEquipo.Click += lbEquipo_Click;
+            lbHerramienta.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lbHerramienta.BackColor = System.Drawing.Color.Transparent;
+            lbHerramienta.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lbHerramienta.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            lbHerramienta.Location = new System.Drawing.Point(0, 0);
+            lbHerramienta.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            lbHerramienta.Name = "lbHerramienta";
+            lbHerramienta.Size = new System.Drawing.Size(141, 22);
+            lbHerramienta.TabIndex = 16;
+            lbHerramienta.Text = "Herramienta (+)";
+            lbHerramienta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lbHerramienta.Click += lbHerramienta_Click;
             // 
             // cbHerraminetas
             // 
@@ -317,7 +344,7 @@
             cbHerraminetas.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             cbHerraminetas.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
             cbHerraminetas.FormattingEnabled = true;
-            cbHerraminetas.Location = new System.Drawing.Point(147, 0);
+            cbHerraminetas.Location = new System.Drawing.Point(160, 0);
             cbHerraminetas.Margin = new System.Windows.Forms.Padding(7, 0, 12, 0);
             cbHerraminetas.Name = "cbHerraminetas";
             cbHerraminetas.Size = new System.Drawing.Size(265, 27);
@@ -331,7 +358,7 @@
             cbMarcas.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             cbMarcas.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
             cbMarcas.FormattingEnabled = true;
-            cbMarcas.Location = new System.Drawing.Point(556, 0);
+            cbMarcas.Location = new System.Drawing.Point(607, 0);
             cbMarcas.Margin = new System.Windows.Forms.Padding(7, 0, 12, 0);
             cbMarcas.Name = "cbMarcas";
             cbMarcas.Size = new System.Drawing.Size(218, 27);
@@ -343,12 +370,12 @@
             lbMarca.BackColor = System.Drawing.Color.Transparent;
             lbMarca.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             lbMarca.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            lbMarca.Location = new System.Drawing.Point(424, 0);
+            lbMarca.Location = new System.Drawing.Point(463, 0);
             lbMarca.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             lbMarca.Name = "lbMarca";
-            lbMarca.Size = new System.Drawing.Size(113, 22);
+            lbMarca.Size = new System.Drawing.Size(125, 22);
             lbMarca.TabIndex = 18;
-            lbMarca.Text = "Marcas (+)";
+            lbMarca.Text = "Fabricante (+)";
             lbMarca.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             lbMarca.Click += lbMarca_Click;
             // 
@@ -361,26 +388,26 @@
             label15.Location = new System.Drawing.Point(0, 37);
             label15.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label15.Name = "label15";
-            label15.Size = new System.Drawing.Size(128, 22);
+            label15.Size = new System.Drawing.Size(141, 22);
             label15.TabIndex = 21;
             label15.Text = "Serial";
             label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtObservacion
             // 
-            txtObservacion.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             txtObservacion.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             txtObservacion.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
             txtObservacion.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            tableLayoutPanel3.SetColumnSpan(txtObservacion, 6);
+            tableLayoutPanel3.SetColumnSpan(txtObservacion, 3);
+            txtObservacion.Dock = System.Windows.Forms.DockStyle.Fill;
             txtObservacion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txtObservacion.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
             txtObservacion.Location = new System.Drawing.Point(0, 120);
-            txtObservacion.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            txtObservacion.Margin = new System.Windows.Forms.Padding(0);
             txtObservacion.Multiline = true;
             txtObservacion.Name = "txtObservacion";
             txtObservacion.ReadOnly = true;
-            txtObservacion.Size = new System.Drawing.Size(1309, 94);
+            txtObservacion.Size = new System.Drawing.Size(600, 106);
             txtObservacion.TabIndex = 15;
             // 
             // label12
@@ -389,13 +416,53 @@
             label12.BackColor = System.Drawing.Color.Transparent;
             label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label12.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label12.Location = new System.Drawing.Point(424, 37);
+            label12.Location = new System.Drawing.Point(463, 37);
             label12.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(113, 22);
+            label12.Size = new System.Drawing.Size(125, 22);
             label12.TabIndex = 20;
-            label12.Text = "Dimensiones";
+            label12.Text = "Parte Número";
             label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = System.Drawing.Color.Black;
+            tableLayoutPanel3.SetColumnSpan(panel6, 3);
+            panel6.Controls.Add(lbCronometro);
+            panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel6.Location = new System.Drawing.Point(600, 120);
+            panel6.Margin = new System.Windows.Forms.Padding(0);
+            panel6.Name = "panel6";
+            panel6.Size = new System.Drawing.Size(843, 106);
+            panel6.TabIndex = 63;
+            // 
+            // lbCronometro
+            // 
+            lbCronometro.BackColor = System.Drawing.Color.Black;
+            lbCronometro.Dock = System.Windows.Forms.DockStyle.Fill;
+            lbCronometro.Font = new System.Drawing.Font("Bookman Old Style", 36F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, 0);
+            lbCronometro.Location = new System.Drawing.Point(0, 0);
+            lbCronometro.Name = "lbCronometro";
+            lbCronometro.Size = new System.Drawing.Size(843, 106);
+            lbCronometro.TabIndex = 0;
+            lbCronometro.Text = "00:00:00";
+            lbCronometro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbModelos
+            // 
+            lbModelos.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lbModelos.BackColor = System.Drawing.Color.Transparent;
+            lbModelos.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lbModelos.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            lbModelos.Location = new System.Drawing.Point(987, 72);
+            lbModelos.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            lbModelos.Name = "lbModelos";
+            lbModelos.Size = new System.Drawing.Size(444, 22);
+            lbModelos.TabIndex = 19;
+            lbModelos.Text = "Modelos (+)";
+            lbModelos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lbModelos.Visible = false;
+            lbModelos.Click += lbModelos_Click;
             // 
             // tableLayoutPanelContainer2
             // 
@@ -406,11 +473,12 @@
             tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
             tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187F));
             tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
-            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
-            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 117F));
-            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
+            tableLayoutPanelContainer2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            tableLayoutPanelContainer2.Controls.Add(cbMax, 7, 2);
             tableLayoutPanelContainer2.Controls.Add(label14, 0, 3);
             tableLayoutPanelContainer2.Controls.Add(lbCliente, 0, 0);
             tableLayoutPanelContainer2.Controls.Add(txtCliente, 1, 0);
@@ -425,16 +493,16 @@
             tableLayoutPanelContainer2.Controls.Add(btnDetener, 5, 3);
             tableLayoutPanelContainer2.Controls.Add(txtMin, 5, 2);
             tableLayoutPanelContainer2.Controls.Add(label2, 6, 2);
-            tableLayoutPanelContainer2.Controls.Add(txtMax, 7, 2);
-            tableLayoutPanelContainer2.Controls.Add(txtTiempo, 5, 1);
             tableLayoutPanelContainer2.Controls.Add(cbSensores, 5, 0);
             tableLayoutPanelContainer2.Controls.Add(label13, 2, 3);
             tableLayoutPanelContainer2.Controls.Add(dtFecha, 3, 3);
             tableLayoutPanelContainer2.Controls.Add(txtNro, 1, 3);
-            tableLayoutPanelContainer2.Controls.Add(checkTemperatura, 8, 3);
-            tableLayoutPanelContainer2.Controls.Add(checkPSI, 8, 2);
-            tableLayoutPanelContainer2.Controls.Add(label10, 9, 2);
-            tableLayoutPanelContainer2.Controls.Add(label11, 9, 3);
+            tableLayoutPanelContainer2.Controls.Add(cbTiempo, 5, 1);
+            tableLayoutPanelContainer2.Controls.Add(panel4, 9, 0);
+            tableLayoutPanelContainer2.Controls.Add(panel5, 9, 2);
+            tableLayoutPanelContainer2.Controls.Add(checkPSI, 8, 0);
+            tableLayoutPanelContainer2.Controls.Add(checkTemperatura, 8, 2);
+            tableLayoutPanelContainer2.Controls.Add(txtMax, 7, 3);
             tableLayoutPanelContainer2.Dock = System.Windows.Forms.DockStyle.Top;
             tableLayoutPanelContainer2.Location = new System.Drawing.Point(12, 30);
             tableLayoutPanelContainer2.Margin = new System.Windows.Forms.Padding(0);
@@ -445,8 +513,27 @@
             tableLayoutPanelContainer2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             tableLayoutPanelContainer2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             tableLayoutPanelContainer2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tableLayoutPanelContainer2.Size = new System.Drawing.Size(1321, 160);
+            tableLayoutPanelContainer2.Size = new System.Drawing.Size(1443, 160);
             tableLayoutPanelContainer2.TabIndex = 7;
+            // 
+            // cbMax
+            // 
+            cbMax.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            cbMax.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cbMax.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            cbMax.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            cbMax.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbMax.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            cbMax.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            cbMax.FormattingEnabled = true;
+            cbMax.Items.AddRange(new object[] { "1000", "2000", "3000", "4000", "5000", "6000", "7000", "8000", "9000", "10000", "11000", "12000", "13000", "14000", "15000" });
+            cbMax.Location = new System.Drawing.Point(869, 80);
+            cbMax.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            cbMax.Name = "cbMax";
+            cbMax.Size = new System.Drawing.Size(83, 27);
+            cbMax.TabIndex = 68;
+            cbMax.SelectedIndexChanged += cbMax_SelectedIndexChanged;
             // 
             // label14
             // 
@@ -475,6 +562,7 @@
             lbCliente.TabIndex = 29;
             lbCliente.Text = "Cliente";
             lbCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            lbCliente.Click += lbCliente_Click;
             // 
             // txtCliente
             // 
@@ -628,7 +716,7 @@
             btnDetener.Name = "btnDetener";
             btnDetener.Size = new System.Drawing.Size(93, 40);
             btnDetener.TabIndex = 25;
-            btnDetener.Text = "Detener";
+            btnDetener.Text = "Terminar";
             btnDetener.UseVisualStyleBackColor = false;
             btnDetener.Click += btnDetener_Click;
             // 
@@ -642,6 +730,7 @@
             txtMin.Name = "txtMin";
             txtMin.Size = new System.Drawing.Size(85, 27);
             txtMin.TabIndex = 19;
+            txtMin.Text = "0";
             txtMin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label2
@@ -650,39 +739,13 @@
             label2.BackColor = System.Drawing.Color.Transparent;
             label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label2.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label2.Location = new System.Drawing.Point(816, 80);
+            label2.Location = new System.Drawing.Point(804, 80);
             label2.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(102, 28);
+            label2.Size = new System.Drawing.Size(53, 28);
             label2.TabIndex = 20;
             label2.Text = "Max";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txtMax
-            // 
-            txtMax.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            txtMax.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtMax.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            txtMax.Location = new System.Drawing.Point(930, 80);
-            txtMax.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            txtMax.Name = "txtMax";
-            txtMax.Size = new System.Drawing.Size(97, 27);
-            txtMax.TabIndex = 3;
-            txtMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtTiempo
-            // 
-            txtTiempo.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            txtTiempo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtTiempo.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            txtTiempo.Location = new System.Drawing.Point(679, 40);
-            txtTiempo.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            txtTiempo.Name = "txtTiempo";
-            txtTiempo.Size = new System.Drawing.Size(57, 27);
-            txtTiempo.TabIndex = 28;
-            txtTiempo.Text = "1000";
-            txtTiempo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            txtTiempo.TextChanged += txtTiempo_TextChanged;
             // 
             // cbSensores
             // 
@@ -699,7 +762,7 @@
             cbSensores.Location = new System.Drawing.Point(679, 0);
             cbSensores.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             cbSensores.Name = "cbSensores";
-            cbSensores.Size = new System.Drawing.Size(356, 27);
+            cbSensores.Size = new System.Drawing.Size(273, 27);
             cbSensores.TabIndex = 1;
             // 
             // label13
@@ -745,59 +808,119 @@
             txtNro.TextChanged += txtNro_TextChanged;
             txtNro.KeyPress += txtNro_KeyPress;
             // 
-            // checkTemperatura
+            // cbTiempo
             // 
-            checkTemperatura.AutoSize = true;
-            checkTemperatura.Checked = true;
-            checkTemperatura.CheckState = System.Windows.Forms.CheckState.Checked;
-            checkTemperatura.Location = new System.Drawing.Point(1050, 123);
-            checkTemperatura.Name = "checkTemperatura";
-            checkTemperatura.Size = new System.Drawing.Size(25, 23);
-            checkTemperatura.TabIndex = 59;
-            checkTemperatura.Text = "checkBox1";
-            checkTemperatura.UseVisualStyleBackColor = true;
-            checkTemperatura.CheckedChanged += checkTemperatura_CheckedChanged;
+            cbTiempo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbTiempo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            cbTiempo.FormattingEnabled = true;
+            cbTiempo.Items.AddRange(new object[] { "200", "1000", "2000", "4000", "10000" });
+            cbTiempo.Location = new System.Drawing.Point(682, 43);
+            cbTiempo.Name = "cbTiempo";
+            cbTiempo.Size = new System.Drawing.Size(119, 27);
+            cbTiempo.TabIndex = 65;
+            cbTiempo.SelectedIndexChanged += cbTiempo_SelectedIndexChanged;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(txtPresion);
+            panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel4.Location = new System.Drawing.Point(1103, 0);
+            panel4.Margin = new System.Windows.Forms.Padding(0);
+            panel4.Name = "panel4";
+            tableLayoutPanelContainer2.SetRowSpan(panel4, 2);
+            panel4.Size = new System.Drawing.Size(340, 80);
+            panel4.TabIndex = 66;
+            // 
+            // txtPresion
+            // 
+            txtPresion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            txtPresion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            txtPresion.Dock = System.Windows.Forms.DockStyle.Fill;
+            txtPresion.Font = new System.Drawing.Font("Calibri", 45.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            txtPresion.ForeColor = System.Drawing.Color.DarkBlue;
+            txtPresion.Location = new System.Drawing.Point(0, 0);
+            txtPresion.Margin = new System.Windows.Forms.Padding(0);
+            txtPresion.Multiline = true;
+            txtPresion.Name = "txtPresion";
+            txtPresion.ReadOnly = true;
+            txtPresion.Size = new System.Drawing.Size(340, 80);
+            txtPresion.TabIndex = 64;
+            txtPresion.Text = "NaN";
+            txtPresion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(txtTemperatura);
+            panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel5.Location = new System.Drawing.Point(1103, 80);
+            panel5.Margin = new System.Windows.Forms.Padding(0);
+            panel5.Name = "panel5";
+            tableLayoutPanelContainer2.SetRowSpan(panel5, 2);
+            panel5.Size = new System.Drawing.Size(340, 80);
+            panel5.TabIndex = 67;
+            // 
+            // txtTemperatura
+            // 
+            txtTemperatura.BackColor = System.Drawing.SystemColors.ButtonFace;
+            txtTemperatura.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            txtTemperatura.Dock = System.Windows.Forms.DockStyle.Fill;
+            txtTemperatura.Font = new System.Drawing.Font("Calibri", 45.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            txtTemperatura.ForeColor = System.Drawing.Color.Sienna;
+            txtTemperatura.Location = new System.Drawing.Point(0, 0);
+            txtTemperatura.Margin = new System.Windows.Forms.Padding(0);
+            txtTemperatura.Multiline = true;
+            txtTemperatura.Name = "txtTemperatura";
+            txtTemperatura.ReadOnly = true;
+            txtTemperatura.Size = new System.Drawing.Size(340, 80);
+            txtTemperatura.TabIndex = 65;
+            txtTemperatura.Text = "NaN";
+            txtTemperatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // checkPSI
             // 
             checkPSI.AutoSize = true;
             checkPSI.Checked = true;
             checkPSI.CheckState = System.Windows.Forms.CheckState.Checked;
-            checkPSI.Location = new System.Drawing.Point(1050, 83);
+            checkPSI.Dock = System.Windows.Forms.DockStyle.Fill;
+            checkPSI.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            checkPSI.ForeColor = System.Drawing.Color.Black;
+            checkPSI.Location = new System.Drawing.Point(967, 3);
             checkPSI.Name = "checkPSI";
-            checkPSI.Size = new System.Drawing.Size(25, 23);
+            tableLayoutPanelContainer2.SetRowSpan(checkPSI, 2);
+            checkPSI.Size = new System.Drawing.Size(133, 74);
             checkPSI.TabIndex = 60;
-            checkPSI.Text = "checkBox2";
+            checkPSI.Text = "Presión";
             checkPSI.UseVisualStyleBackColor = true;
             checkPSI.CheckedChanged += checkPSI_CheckedChanged;
             // 
-            // label10
+            // checkTemperatura
             // 
-            label10.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            label10.BackColor = System.Drawing.Color.Transparent;
-            label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label10.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label10.Location = new System.Drawing.Point(1078, 80);
-            label10.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            label10.Name = "label10";
-            label10.Size = new System.Drawing.Size(231, 28);
-            label10.TabIndex = 61;
-            label10.Text = "PSI";
-            label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            checkTemperatura.AutoSize = true;
+            checkTemperatura.Checked = true;
+            checkTemperatura.CheckState = System.Windows.Forms.CheckState.Checked;
+            checkTemperatura.Dock = System.Windows.Forms.DockStyle.Fill;
+            checkTemperatura.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            checkTemperatura.ForeColor = System.Drawing.Color.Black;
+            checkTemperatura.Location = new System.Drawing.Point(967, 83);
+            checkTemperatura.Name = "checkTemperatura";
+            tableLayoutPanelContainer2.SetRowSpan(checkTemperatura, 2);
+            checkTemperatura.Size = new System.Drawing.Size(133, 74);
+            checkTemperatura.TabIndex = 59;
+            checkTemperatura.Text = "Temperatura";
+            checkTemperatura.UseVisualStyleBackColor = true;
+            checkTemperatura.CheckedChanged += checkTemperatura_CheckedChanged;
             // 
-            // label11
+            // txtMax
             // 
-            label11.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            label11.BackColor = System.Drawing.Color.Transparent;
-            label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label11.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label11.Location = new System.Drawing.Point(1078, 120);
-            label11.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(231, 28);
-            label11.TabIndex = 62;
-            label11.Text = "Temperatura";
-            label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            txtMax.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            txtMax.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtMax.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            txtMax.Location = new System.Drawing.Point(869, 120);
+            txtMax.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            txtMax.Name = "txtMax";
+            txtMax.Size = new System.Drawing.Size(83, 27);
+            txtMax.TabIndex = 3;
+            txtMax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanelContenedorPrincipar
             // 
@@ -812,12 +935,13 @@
             tableLayoutPanelContenedorPrincipar.RowCount = 1;
             tableLayoutPanelContenedorPrincipar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             tableLayoutPanelContenedorPrincipar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1F));
-            tableLayoutPanelContenedorPrincipar.Size = new System.Drawing.Size(1321, 0);
+            tableLayoutPanelContenedorPrincipar.Size = new System.Drawing.Size(1443, 0);
             tableLayoutPanelContenedorPrincipar.TabIndex = 6;
             // 
             // panel2
             // 
             panel2.BackColor = System.Drawing.Color.FromArgb(230, 233, 239);
+            panel2.Controls.Add(btnLimpiarParcial);
             panel2.Controls.Add(btnExportar);
             panel2.Controls.Add(btnImagen);
             panel2.Controls.Add(btnCliente);
@@ -829,8 +953,23 @@
             panel2.Location = new System.Drawing.Point(12, 825);
             panel2.Margin = new System.Windows.Forms.Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(1321, 87);
+            panel2.Size = new System.Drawing.Size(1443, 87);
             panel2.TabIndex = 11;
+            // 
+            // btnLimpiarParcial
+            // 
+            btnLimpiarParcial.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            btnLimpiarParcial.FlatAppearance.BorderSize = 0;
+            btnLimpiarParcial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnLimpiarParcial.Image = Properties.Resources.limpiar64;
+            btnLimpiarParcial.Location = new System.Drawing.Point(1013, 4);
+            btnLimpiarParcial.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnLimpiarParcial.Name = "btnLimpiarParcial";
+            btnLimpiarParcial.Size = new System.Drawing.Size(79, 78);
+            btnLimpiarParcial.TabIndex = 22;
+            toolTip1.SetToolTip(btnLimpiarParcial, "Limpieza Parcial");
+            btnLimpiarParcial.UseVisualStyleBackColor = true;
+            btnLimpiarParcial.Click += btnLimpiarParcial_Click;
             // 
             // btnExportar
             // 
@@ -838,7 +977,7 @@
             btnExportar.FlatAppearance.BorderSize = 0;
             btnExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnExportar.Image = Properties.Resources.importar64;
-            btnExportar.Location = new System.Drawing.Point(890, 6);
+            btnExportar.Location = new System.Drawing.Point(1099, 6);
             btnExportar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnExportar.Name = "btnExportar";
             btnExportar.Size = new System.Drawing.Size(79, 78);
@@ -853,7 +992,7 @@
             btnImagen.FlatAppearance.BorderSize = 0;
             btnImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnImagen.Image = Properties.Resources.subirfoto64;
-            btnImagen.Location = new System.Drawing.Point(977, 5);
+            btnImagen.Location = new System.Drawing.Point(1186, 3);
             btnImagen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnImagen.Name = "btnImagen";
             btnImagen.Size = new System.Drawing.Size(79, 78);
@@ -894,11 +1033,11 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            btnLimpiar.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left;
             btnLimpiar.FlatAppearance.BorderSize = 0;
             btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnLimpiar.Image = Properties.Resources.limpiar64;
-            btnLimpiar.Location = new System.Drawing.Point(1238, 4);
+            btnLimpiar.Location = new System.Drawing.Point(178, 3);
             btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new System.Drawing.Size(79, 78);
@@ -913,7 +1052,7 @@
             btnImprimir.FlatAppearance.BorderSize = 0;
             btnImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnImprimir.Image = (System.Drawing.Image)resources.GetObject("btnImprimir.Image");
-            btnImprimir.Location = new System.Drawing.Point(1151, 3);
+            btnImprimir.Location = new System.Drawing.Point(1273, 3);
             btnImprimir.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new System.Drawing.Size(79, 78);
@@ -928,7 +1067,7 @@
             btnGuardar.FlatAppearance.BorderSize = 0;
             btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnGuardar.Image = (System.Drawing.Image)resources.GetObject("btnGuardar.Image");
-            btnGuardar.Location = new System.Drawing.Point(1064, 4);
+            btnGuardar.Location = new System.Drawing.Point(1360, 3);
             btnGuardar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new System.Drawing.Size(79, 78);
@@ -946,7 +1085,7 @@
             tpConsultar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             tpConsultar.Name = "tpConsultar";
             tpConsultar.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            tpConsultar.Size = new System.Drawing.Size(1362, 862);
+            tpConsultar.Size = new System.Drawing.Size(1484, 643);
             tpConsultar.TabIndex = 1;
             tpConsultar.Text = "Consultar";
             // 
@@ -955,7 +1094,6 @@
             panel1.AutoScroll = true;
             panel1.BackColor = System.Drawing.Color.FromArgb(230, 233, 239);
             panel1.Controls.Add(tablaConsulta);
-            panel1.Controls.Add(tableLayoutPanel4);
             panel1.Controls.Add(tableLayoutPanel5);
             panel1.Controls.Add(tableLayoutPanel8);
             panel1.Controls.Add(panel3);
@@ -964,7 +1102,7 @@
             panel1.Margin = new System.Windows.Forms.Padding(0);
             panel1.Name = "panel1";
             panel1.Padding = new System.Windows.Forms.Padding(12);
-            panel1.Size = new System.Drawing.Size(1354, 856);
+            panel1.Size = new System.Drawing.Size(1476, 637);
             panel1.TabIndex = 3;
             // 
             // tablaConsulta
@@ -997,7 +1135,7 @@
             tablaConsulta.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             tablaConsulta.EnableHeadersVisualStyles = false;
             tablaConsulta.GridColor = System.Drawing.Color.FromArgb(230, 233, 239);
-            tablaConsulta.Location = new System.Drawing.Point(12, 158);
+            tablaConsulta.Location = new System.Drawing.Point(12, 85);
             tablaConsulta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             tablaConsulta.MultiSelect = false;
             tablaConsulta.Name = "tablaConsulta";
@@ -1013,54 +1151,9 @@
             tablaConsulta.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             tablaConsulta.RowHeadersVisible = false;
             tablaConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            tablaConsulta.Size = new System.Drawing.Size(1330, 599);
+            tablaConsulta.Size = new System.Drawing.Size(1452, 453);
             tablaConsulta.TabIndex = 12;
-            // 
-            // tableLayoutPanel4
-            // 
-            tableLayoutPanel4.ColumnCount = 4;
-            tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.919F));
-            tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.84735F));
-            tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.93347F));
-            tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.17048F));
-            tableLayoutPanel4.Controls.Add(label3, 2, 1);
-            tableLayoutPanel4.Controls.Add(txtFiltro, 3, 1);
-            tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            tableLayoutPanel4.Location = new System.Drawing.Point(12, 85);
-            tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            tableLayoutPanel4.Name = "tableLayoutPanel4";
-            tableLayoutPanel4.RowCount = 2;
-            tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.20635F));
-            tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.79365F));
-            tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            tableLayoutPanel4.Size = new System.Drawing.Size(1330, 73);
-            tableLayoutPanel4.TabIndex = 13;
-            // 
-            // label3
-            // 
-            label3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            label3.BackColor = System.Drawing.Color.Transparent;
-            label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label3.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label3.Location = new System.Drawing.Point(661, 35);
-            label3.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(280, 24);
-            label3.TabIndex = 7;
-            label3.Text = "Filtro";
-            label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // txtFiltro
-            // 
-            txtFiltro.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            txtFiltro.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtFiltro.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            txtFiltro.Location = new System.Drawing.Point(953, 35);
-            txtFiltro.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            txtFiltro.Name = "txtFiltro";
-            txtFiltro.Size = new System.Drawing.Size(259, 27);
-            txtFiltro.TabIndex = 9;
+            tablaConsulta.CellDoubleClick += tablaConsulta_CellDoubleClick;
             // 
             // tableLayoutPanel5
             // 
@@ -1075,24 +1168,27 @@
             tableLayoutPanel5.RowCount = 1;
             tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tableLayoutPanel5.Size = new System.Drawing.Size(1330, 0);
+            tableLayoutPanel5.Size = new System.Drawing.Size(1452, 0);
             tableLayoutPanel5.TabIndex = 7;
             // 
             // tableLayoutPanel8
             // 
-            tableLayoutPanel8.ColumnCount = 4;
-            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.08411F));
-            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.87539F));
-            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.99377F));
-            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.89096F));
-            tableLayoutPanel8.Controls.Add(txtCInspeccion, 1, 1);
+            tableLayoutPanel8.ColumnCount = 5;
+            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.2561979F));
+            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.939394F));
+            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.539945F));
+            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.746556F));
+            tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.5179062F));
+            tableLayoutPanel8.Controls.Add(label9, 4, 0);
+            tableLayoutPanel8.Controls.Add(label3, 1, 0);
             tableLayoutPanel8.Controls.Add(dtpCHasta, 3, 1);
             tableLayoutPanel8.Controls.Add(dtpCDesde, 2, 1);
             tableLayoutPanel8.Controls.Add(txtCNro, 0, 1);
             tableLayoutPanel8.Controls.Add(label7, 3, 0);
             tableLayoutPanel8.Controls.Add(label6, 2, 0);
             tableLayoutPanel8.Controls.Add(label4, 0, 0);
-            tableLayoutPanel8.Controls.Add(label9, 1, 0);
+            tableLayoutPanel8.Controls.Add(cbCCliente, 1, 1);
+            tableLayoutPanel8.Controls.Add(txtCSerie, 4, 1);
             tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Top;
             tableLayoutPanel8.Location = new System.Drawing.Point(12, 12);
             tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
@@ -1100,21 +1196,36 @@
             tableLayoutPanel8.RowCount = 2;
             tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.20635F));
             tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.79365F));
-            tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
-            tableLayoutPanel8.Size = new System.Drawing.Size(1330, 73);
+            tableLayoutPanel8.Size = new System.Drawing.Size(1452, 73);
             tableLayoutPanel8.TabIndex = 6;
             // 
-            // txtCInspeccion
+            // label9
             // 
-            txtCInspeccion.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            txtCInspeccion.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            txtCInspeccion.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            txtCInspeccion.Location = new System.Drawing.Point(174, 35);
-            txtCInspeccion.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            txtCInspeccion.Name = "txtCInspeccion";
-            txtCInspeccion.Size = new System.Drawing.Size(132, 27);
-            txtCInspeccion.TabIndex = 11;
+            label9.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label9.BackColor = System.Drawing.Color.Transparent;
+            label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label9.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            label9.Location = new System.Drawing.Point(733, 0);
+            label9.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(707, 23);
+            label9.TabIndex = 16;
+            label9.Text = "Serie";
+            label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label3
+            // 
+            label3.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            label3.BackColor = System.Drawing.Color.Transparent;
+            label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            label3.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            label3.Location = new System.Drawing.Point(207, 0);
+            label3.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(263, 23);
+            label3.TabIndex = 14;
+            label3.Text = "Cliente";
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dtpCHasta
             // 
@@ -1123,12 +1234,12 @@
             dtpCHasta.CalendarMonthBackground = System.Drawing.Color.FromArgb(120, 120, 120);
             dtpCHasta.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             dtpCHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtpCHasta.Location = new System.Drawing.Point(531, 35);
+            dtpCHasta.Location = new System.Drawing.Point(606, 35);
             dtpCHasta.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             dtpCHasta.MaxDate = new System.DateTime(3000, 12, 31, 0, 0, 0, 0);
             dtpCHasta.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             dtpCHasta.Name = "dtpCHasta";
-            dtpCHasta.Size = new System.Drawing.Size(116, 24);
+            dtpCHasta.Size = new System.Drawing.Size(115, 24);
             dtpCHasta.TabIndex = 12;
             // 
             // dtpCDesde
@@ -1138,12 +1249,12 @@
             dtpCDesde.CalendarMonthBackground = System.Drawing.Color.FromArgb(120, 120, 120);
             dtpCDesde.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             dtpCDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            dtpCDesde.Location = new System.Drawing.Point(372, 35);
+            dtpCDesde.Location = new System.Drawing.Point(482, 35);
             dtpCDesde.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             dtpCDesde.MaxDate = new System.DateTime(3000, 12, 31, 0, 0, 0, 0);
             dtpCDesde.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             dtpCDesde.Name = "dtpCDesde";
-            dtpCDesde.Size = new System.Drawing.Size(100, 24);
+            dtpCDesde.Size = new System.Drawing.Size(111, 24);
             dtpCDesde.TabIndex = 11;
             // 
             // txtCNro
@@ -1154,7 +1265,7 @@
             txtCNro.Location = new System.Drawing.Point(0, 35);
             txtCNro.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             txtCNro.Name = "txtCNro";
-            txtCNro.Size = new System.Drawing.Size(125, 27);
+            txtCNro.Size = new System.Drawing.Size(177, 27);
             txtCNro.TabIndex = 8;
             // 
             // label7
@@ -1163,10 +1274,10 @@
             label7.BackColor = System.Drawing.Color.Transparent;
             label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label7.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label7.Location = new System.Drawing.Point(531, 0);
+            label7.Location = new System.Drawing.Point(606, 0);
             label7.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label7.Name = "label7";
-            label7.Size = new System.Drawing.Size(787, 23);
+            label7.Size = new System.Drawing.Size(115, 23);
             label7.TabIndex = 7;
             label7.Text = "Hasta";
             label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1177,10 +1288,10 @@
             label6.BackColor = System.Drawing.Color.Transparent;
             label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             label6.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label6.Location = new System.Drawing.Point(372, 0);
+            label6.Location = new System.Drawing.Point(482, 0);
             label6.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(147, 23);
+            label6.Size = new System.Drawing.Size(112, 23);
             label6.TabIndex = 6;
             label6.Text = "Desde";
             label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1194,34 +1305,46 @@
             label4.Location = new System.Drawing.Point(0, 0);
             label4.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(162, 23);
+            label4.Size = new System.Drawing.Size(195, 23);
             label4.TabIndex = 4;
-            label4.Text = "Recepcion";
+            label4.Text = "Numero de Prueba";
             label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label9
+            // cbCCliente
             // 
-            label9.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            label9.BackColor = System.Drawing.Color.Transparent;
-            label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label9.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
-            label9.Location = new System.Drawing.Point(174, 0);
-            label9.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
-            label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(186, 23);
-            label9.TabIndex = 13;
-            label9.Text = "Inspeccion";
-            label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            cbCCliente.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            cbCCliente.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            cbCCliente.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            cbCCliente.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            cbCCliente.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            cbCCliente.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            cbCCliente.FormattingEnabled = true;
+            cbCCliente.Location = new System.Drawing.Point(207, 35);
+            cbCCliente.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            cbCCliente.Name = "cbCCliente";
+            cbCCliente.Size = new System.Drawing.Size(263, 27);
+            cbCCliente.TabIndex = 13;
+            // 
+            // txtCSerie
+            // 
+            txtCSerie.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            txtCSerie.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txtCSerie.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
+            txtCSerie.Location = new System.Drawing.Point(733, 35);
+            txtCSerie.Margin = new System.Windows.Forms.Padding(0, 0, 12, 12);
+            txtCSerie.Name = "txtCSerie";
+            txtCSerie.Size = new System.Drawing.Size(177, 27);
+            txtCSerie.TabIndex = 15;
             // 
             // panel3
             // 
             panel3.BackColor = System.Drawing.Color.FromArgb(230, 233, 239);
             panel3.Controls.Add(btnConsultar);
             panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel3.Location = new System.Drawing.Point(12, 757);
+            panel3.Location = new System.Drawing.Point(12, 538);
             panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(1330, 87);
+            panel3.Size = new System.Drawing.Size(1452, 87);
             panel3.TabIndex = 11;
             // 
             // btnConsultar
@@ -1230,18 +1353,19 @@
             btnConsultar.FlatAppearance.BorderSize = 0;
             btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btnConsultar.Image = (System.Drawing.Image)resources.GetObject("btnConsultar.Image");
-            btnConsultar.Location = new System.Drawing.Point(5, -8);
+            btnConsultar.Location = new System.Drawing.Point(4, 6);
             btnConsultar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new System.Drawing.Size(79, 78);
             btnConsultar.TabIndex = 10;
             btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
             // 
             // FormSensor
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1370, 968);
+            ClientSize = new System.Drawing.Size(1492, 749);
             Controls.Add(tcGeneral);
             Controls.Add(labelDescripcion);
             Name = "FormSensor";
@@ -1252,15 +1376,18 @@
             panelRecepcion.PerformLayout();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel3.PerformLayout();
+            panel6.ResumeLayout(false);
             tableLayoutPanelContainer2.ResumeLayout(false);
             tableLayoutPanelContainer2.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             panel2.ResumeLayout(false);
             tpConsultar.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)tablaConsulta).EndInit();
-            tableLayoutPanel4.ResumeLayout(false);
-            tableLayoutPanel4.PerformLayout();
             tableLayoutPanel8.ResumeLayout(false);
             tableLayoutPanel8.PerformLayout();
             panel3.ResumeLayout(false);
@@ -1287,19 +1414,14 @@
         private System.Windows.Forms.TabPage tpConsultar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView tablaConsulta;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtFiltro;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-        private System.Windows.Forms.TextBox txtCInspeccion;
         private System.Windows.Forms.DateTimePicker dtpCHasta;
         private System.Windows.Forms.DateTimePicker dtpCDesde;
         private System.Windows.Forms.TextBox txtCNro;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Label label2;
@@ -1308,7 +1430,6 @@
         private System.Windows.Forms.Button btnDetener;
         private System.Windows.Forms.ComboBox cbSensores;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTiempo;
         private OxyPlot.WindowsForms.PlotView Grafica;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label lbCliente;
@@ -1325,10 +1446,8 @@
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkPSI;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.CheckBox checkTemperatura;
-        private System.Windows.Forms.Label lbEquipo;
+        private System.Windows.Forms.Label lbHerramienta;
         private System.Windows.Forms.ComboBox cbHerraminetas;
         private System.Windows.Forms.Label lbMarca;
         private System.Windows.Forms.ComboBox cbMarcas;
@@ -1341,5 +1460,20 @@
         private System.Windows.Forms.Label lbModelos;
         private System.Windows.Forms.Button btnImagen;
         private System.Windows.Forms.Button btnExportar;
+        private System.Windows.Forms.ComboBox cbTiempo;
+        private System.Windows.Forms.ComboBox cbEquipos;
+        private System.Windows.Forms.Label lbEquipos;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox txtPresion;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.TextBox txtTemperatura;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lbCronometro;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox cbCCliente;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtCSerie;
+        private System.Windows.Forms.ComboBox cbMax;
+        private System.Windows.Forms.Button btnLimpiarParcial;
     }
 }

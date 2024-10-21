@@ -20,7 +20,7 @@ namespace MIS.Modelos.Seguridad
         public async Task<DataTable> ValidateUserAsync(string username, string password, string ip, string mac)
         {
             string encryptedPassword = EncryptPassword(password);
-            string query = $"SELECT id, nombrecompleto, nomusu, clave, ip, mac FROM seguridad.rbac_usuarios WHERE nomusu = '{username}' AND clave = '{encryptedPassword}'";
+            string query = $"SELECT id, nombrecompleto, nomusu, clave, cargo, ip, mac FROM seguridad.rbac_usuarios WHERE nomusu = '{username}' AND clave = '{encryptedPassword}'";
             DataTable result = await dbHelper.ExecuteQueryAsync(query);
             if (result != null)
             {
@@ -63,6 +63,7 @@ namespace MIS.Modelos.Seguridad
                 FG.Ip = "";
                 FG.UserId = 0;
                 FG.UserName = "";
+                FG.Cargo = "";
                 return true;
             } else
             {

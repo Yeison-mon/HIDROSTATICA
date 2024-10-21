@@ -18,7 +18,7 @@ namespace MIS.Helpers
             if (true)
             {
                 FG.Url = "localhost";
-                password = "INTEGRATION2021";
+                password = "integration";
             } else
             {
                 FG.Url = "localhost";

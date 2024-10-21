@@ -154,6 +154,7 @@ namespace MIS
                 {
                     FG.UserId = Convert.ToInt32(user.Rows[0]["id"]);
                     FG.UserName = user.Rows[0]["nombrecompleto"].ToString();
+                    FG.Cargo = user.Rows[0]["cargo"].ToString().ToUpper();
                     Inicio inicio = new Inicio();
                     this.Hide();
                     inicio.Show();

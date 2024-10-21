@@ -144,6 +144,7 @@
             btnSubConf_Tablas.Text = "Tablas del Sistema";
             btnSubConf_Tablas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnSubConf_Tablas.UseVisualStyleBackColor = false;
+            btnSubConf_Tablas.Visible = false;
             // 
             // btnSubConf_Usuarios
             // 
@@ -163,9 +164,10 @@
             btnSubConf_Usuarios.Padding = new System.Windows.Forms.Padding(47, 0, 0, 0);
             btnSubConf_Usuarios.Size = new System.Drawing.Size(275, 46);
             btnSubConf_Usuarios.TabIndex = 5;
-            btnSubConf_Usuarios.Text = "Servicios";
+            btnSubConf_Usuarios.Text = "Usuarios";
             btnSubConf_Usuarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnSubConf_Usuarios.UseVisualStyleBackColor = false;
+            btnSubConf_Usuarios.Click += btnSubConf_Usuarios_Click;
             // 
             // btnSubConf_Clientes
             // 
@@ -188,6 +190,7 @@
             btnSubConf_Clientes.Text = "Clientes";
             btnSubConf_Clientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnSubConf_Clientes.UseVisualStyleBackColor = false;
+            btnSubConf_Clientes.Visible = false;
             btnSubConf_Clientes.Click += btnSubConf_Clientes_Click;
             // 
             // btnMConfiguracion

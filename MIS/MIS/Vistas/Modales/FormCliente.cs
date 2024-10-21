@@ -143,6 +143,8 @@ namespace MIS.Vistas.Modales
             }
             ClientesRepository guardar = new ClientesRepository();
             idcliente = await guardar.GuardarCliente(idcliente, txtDocumento.Text, txtNombre.Text, txtTelefono.Text, txtCelular.Text, txtDireccion.Text, txtCorreo.Text, idciudad);
+            if (idcliente > 0)
+                this.Close();
         }
     }
 }

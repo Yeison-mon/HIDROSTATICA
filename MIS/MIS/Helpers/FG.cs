@@ -16,6 +16,7 @@ namespace MIS.Helpers
     {
         public static int UserId { get; set; }
         public static string UserName { get; set; }
+        public static string Cargo { get; set; }
         public static string Ip { get; set; }
         public static string Mac { get; set; }
         public static string Url { get; set; }

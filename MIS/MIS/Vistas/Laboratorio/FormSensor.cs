@@ -20,6 +20,7 @@ using MIS.Modelos.Laboratorio;
 using MIS.Modelos;
 using Microsoft.Reporting.WinForms;
 using OfficeOpenXml;
+using System.Threading.Tasks;
 
 
 namespace MIS.Vistas.Laboratorio
@@ -29,6 +30,7 @@ namespace MIS.Vistas.Laboratorio
         private SerialPort _serialPort;
         private DataTable _dataTable;
         private System.Windows.Forms.Timer _timer;
+        private System.Windows.Forms.Timer _timer2;
         private int _intervalo;
         private PlotModel _plotModel;
         private LineSeries _lineaTemperatura;
@@ -37,8 +39,8 @@ namespace MIS.Vistas.Laboratorio
         private double variable;
         private float minPSI, maxPSI;
         private int idcliente = 0;
-        private bool simularDatos = false;
         private int hidrostatica = 0;
+        private int segundos, minutos, horas;
         public FormSensor()
         {
             CultureInfo culture = new CultureInfo("en-US");
@@ -48,17 +50,34 @@ namespace MIS.Vistas.Laboratorio
             InitializeComponent();
             FillComboBoxWithCOMPorts();
             InicializarGrafica();
-
             _dataTable = new DataTable();
             _dataTable.Columns.Add("Variable", typeof(float));
             _dataTable.Columns.Add("Temperatura", typeof(float));
             _timer = new System.Windows.Forms.Timer();
+            _timer2 = new System.Windows.Forms.Timer();
             _timer.Tick += Timer_Tick;
+            _timer2.Tick += Timer2_Tick;
             _timer.Tick += Datos;
-            _intervalo = int.TryParse(txtTiempo.Text, out int result) ? result : 1000;
+            cbTiempo.SelectedIndex = 0;
+            _intervalo = int.TryParse("200", out int result) ? result : 200;
+            txtMin.Enabled = false;
             _timer.Interval = _intervalo;
+            _timer2.Interval = 1000;
             this.FormClosing += FormSensor_FormClosing;
             limpiar();
+            DatosConsulta();
+            if (FG.UserId == 1)
+            {
+                label14.Visible = true;
+                txtNro.Visible = true;
+                txtMax.Visible = true;
+            }
+            else
+            {
+                label14.Visible = false;
+                txtNro.Visible = false;
+                txtMax.Visible = false;
+            }
         }
 
         private void InicializarGrafica()
@@ -78,8 +97,8 @@ namespace MIS.Vistas.Laboratorio
             {
                 Position = AxisPosition.Left,
                 Title = "Temperatura (°C)",
-                Minimum = 0,
-                Maximum = 100,
+                Minimum = 10,
+                Maximum = 40,
                 MajorGridlineStyle = LineStyle.Solid,
                 MinorGridlineStyle = LineStyle.Dot
             });
@@ -88,7 +107,7 @@ namespace MIS.Vistas.Laboratorio
                 Position = AxisPosition.Right,
                 Title = "Presión (PSI)",
                 Minimum = 0,
-                Maximum = 10000,
+                Maximum = 20000,
                 MajorGridlineStyle = LineStyle.Solid,
                 MinorGridlineStyle = LineStyle.Dot,
                 Key = "PressureAxis" // Añade una clave para este eje
@@ -99,7 +118,7 @@ namespace MIS.Vistas.Laboratorio
                 StrokeThickness = 2,
                 MarkerType = MarkerType.None,
                 MarkerSize = 3,
-                Color = OxyColors.BlueViolet
+                Color = OxyColors.DarkRed
             };
             _lineaVariable = new LineSeries
             {
@@ -107,64 +126,101 @@ namespace MIS.Vistas.Laboratorio
                 StrokeThickness = 2,
                 MarkerType = MarkerType.None,
                 MarkerSize = 3,
-                Color = OxyColors.Blue,
+                Color = OxyColors.DarkBlue,
                 YAxisKey = "PressureAxis"
             };
             _plotModel.Series.Add(_lineaTemperatura);
             _plotModel.Series.Add(_lineaVariable);
             Grafica.Model = _plotModel;
         }
-        private void Timer_Tick(object sender, EventArgs e)
+        private double lastVariable;
+        private double lastTemperatura;
+
+        private async void Timer_Tick(object sender, EventArgs e)
         {
-            if (_serialPort != null && _serialPort.IsOpen)
+            await Task.Run(() =>
             {
-                try
+                if (_serialPort != null && _serialPort.IsOpen)
                 {
-                    string data = _serialPort.ReadLine();
-                    string[] values = data.Split(',');
+                    try
+                    {
+                        while (_serialPort.BytesToRead > 0) // Leer mientras haya datos
+                        {
+                            string data = _serialPort.ReadLine();
+                            string[] values = data.Split(',');
 
-                    if (values.Length == 2 &&
-                        double.TryParse(values[0], NumberStyles.Float, CultureInfo.InvariantCulture, out double variable) &&
-                        (double.TryParse(values[1], NumberStyles.Float, CultureInfo.InvariantCulture, out double temperatura)))
-                    {
-                        DataRow newRow = _dataTable.NewRow();
-                        newRow["Variable"] = variable;
-                        newRow["Temperatura"] = temperatura == double.NaN ? 0.0 : temperatura;
-                        this.variable = variable;
-                        this.temperatura = temperatura == double.NaN ? 0.00 : temperatura;
-                        _dataTable.Rows.InsertAt(newRow, 0);
-                        btnLimpiar.Visible = true;
+                            if (values.Length == 2 &&
+                                double.TryParse(values[0], NumberStyles.Float, CultureInfo.InvariantCulture, out double variable) &&
+                                double.TryParse(values[1], NumberStyles.Float, CultureInfo.InvariantCulture, out double temperatura))
+                            {
+                                // Almacena el último valor
+                                lastVariable = Math.Round(variable);
+                                lastTemperatura = double.IsNaN(temperatura) ? 0.0 : Math.Round(temperatura, 1);
+                            }
+                            else
+                            {
+                                Debug.WriteLine("Invalid data format or conversion failed.");
+                            }
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        Debug.WriteLine("Invalid data format or conversion failed.");
+                        Debug.WriteLine("Error reading data: " + ex.Message);
                     }
                 }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine("Error reading data: " + ex.Message);
-                }
-            }
-            else if (simularDatos)
-            {
-                this.variable = 256;
-                this.temperatura = 22.50;
+            });
 
-                DataRow newRow = _dataTable.NewRow();
-                newRow["Variable"] = this.variable;
-                newRow["Temperatura"] = this.temperatura;
-                _dataTable.Rows.InsertAt(newRow, 0);
-                btnLimpiar.Visible = true;
-                btnImprimir.Visible = true;
-                btnImagen.Visible = true;
-                btnExportar.Visible = true;
-            }
+            // Actualiza la interfaz de usuario con los últimos valores
+            UpdateUI(lastVariable, lastTemperatura);
         }
+        private void Timer2_Tick(object sender, EventArgs e)
+        {
+            UpdateCronometro();
+        }
+
+        private void UpdateUI(double variable, double temperatura)
+        {
+            DataRow newRow = _dataTable.NewRow();
+            newRow["Variable"] = Math.Round(variable);
+            newRow["Temperatura"] = double.IsNaN(temperatura) ? 0.0 : Math.Round(temperatura, 1);
+            this.variable = Math.Round(variable);
+            this.temperatura = double.IsNaN(temperatura) ? 0.0 : Math.Round(temperatura);
+            _dataTable.Rows.InsertAt(newRow, 0);
+            if (btnLimpiar.Visible == false)
+            {
+                btnLimpiar.Invoke(new Action(() => btnLimpiar.Visible = true));
+            }
+            if (btnLimpiarParcial.Visible == false) { 
+                btnLimpiarParcial.Invoke(new Action(() => btnLimpiar.Visible = true));
+            }
+            txtTemperatura.Invoke(new Action(() => txtTemperatura.Text = this.temperatura.ToString() + " °C"));
+            txtPresion.Invoke(new Action(() => txtPresion.Text = this.variable.ToString() + " PSI"));
+        }
+
+
+        private void UpdateCronometro()
+        {
+            segundos++;
+            if (segundos == 60)
+            {
+                segundos = 0;
+                minutos++;
+            }
+            if (minutos == 60)
+            {
+                minutos = 0;
+                horas++;
+            }
+            lbCronometro.Invoke(new Action(() =>
+                lbCronometro.Text = $"{horas:D2}:{minutos:D2}:{segundos:D2}"
+            ));
+        }
+
         private void Datos(object sender, EventArgs e)
         {
             if (_lineaTemperatura != null && _lineaVariable != null)
             {
-                _lineaTemperatura.Points.Add(new DataPoint(DateTimeAxis.ToDouble(DateTime.Now), 22.01));
+                _lineaTemperatura.Points.Add(new DataPoint(DateTimeAxis.ToDouble(DateTime.Now), this.temperatura));
                 _lineaVariable.Points.Add(new DataPoint(DateTimeAxis.ToDouble(DateTime.Now), this.variable));
                 (_plotModel.Axes[0] as DateTimeAxis).Maximum = DateTimeAxis.ToDouble(DateTime.Now);
                 if (_lineaTemperatura.Points.Count == 1)
@@ -191,9 +247,18 @@ namespace MIS.Vistas.Laboratorio
                 _timer.Stop();
                 _timer.Dispose();
             }
+            if (_timer2 != null)
+            {
+                _timer2.Stop();
+                _timer2.Dispose();
+            }
         }
         private void btnComenzar_Click(object sender, EventArgs e)
         {
+            segundos = 0;
+            minutos = 0;
+            horas = 0;
+            lbCronometro.Text = $"{horas:D2}:{minutos:D2}:{segundos:D2}";
             if (idcliente == 0)
             {
                 FG.ShowAlert("Debe seleccionar un cliente", "Alerta");
@@ -205,16 +270,23 @@ namespace MIS.Vistas.Laboratorio
                 FG.ShowAlert("Seleccione la herramienta", "Alerta");
                 return;
             }
+            else if (cbEquipos.DataSource == null || (int)cbEquipos.SelectedValue == 0)
+            {
+                FG.ShowAlert("Seleccione el equipo", "Alerta");
+                return;
+            }
             else if (cbMarcas.DataSource == null || (int)cbMarcas.SelectedValue == 0)
             {
                 FG.ShowAlert("Seleccione la Marca", "Alerta");
                 return;
             }
+            /*
             else if (cbModelos.DataSource == null || (int)cbModelos.SelectedValue == 0)
             {
                 FG.ShowAlert("Seleccione el Modelo", "Alerta");
                 return;
             }
+            */
             else if (txtSerie.Text == "")
             {
                 FG.ShowAlert("Debe agregar la Serie", "Alerta");
@@ -223,7 +295,7 @@ namespace MIS.Vistas.Laboratorio
             }
             else if (txtDimensiones.Text == "")
             {
-                FG.ShowAlert("Debe agregar las Dimensiones", "Alerta");
+                FG.ShowAlert("Debe agregar el Parte Número", "Alerta");
                 txtSerie.Focus();
                 return;
             }
@@ -262,14 +334,16 @@ namespace MIS.Vistas.Laboratorio
                     }
                     _serialPort = new SerialPort(selectedPort, 9600);
                     _serialPort.Open();
-                    int tiempo = int.TryParse(txtTiempo.Text, out int result) ? result : 1;
+                    int tiempo = int.TryParse(cbTiempo.SelectedItem.ToString(), out int result) ? result : 1000;
                     string configuration = $"{tiempo},{minPSI},{maxPSI}";
-                    _serialPort.WriteLine(configuration);
+                    //_serialPort.WriteLine(configuration);
                     _timer.Start();
+                    _timer2.Start();
                     btnComenzar.Enabled = false;
                     txtSerie.Enabled = false;
                     txtDimensiones.Enabled = false;
                     cbHerraminetas.Enabled = false;
+                    cbEquipos.Enabled = false;
                     cbMarcas.Enabled = false;
                     cbModelos.Enabled = false;
                     btnDetener.Enabled = true;
@@ -296,11 +370,8 @@ namespace MIS.Vistas.Laboratorio
                 _serialPort.Dispose();
                 _serialPort = null;
             }
-            if (simularDatos)
-            {
-                simularDatos = false;
-            }
             _timer.Stop();
+            _timer2.Stop();
             btnGuardar.Visible = true;
             btnComenzar.Enabled = true;
             btnDetener.Enabled = false;
@@ -308,16 +379,19 @@ namespace MIS.Vistas.Laboratorio
             txtObservacion.ReadOnly = false;
             txtNro.Enabled = true;
         }
-        private async void limpiar()
+        private void limpiar()
         {
             btnDetener_Click(null, null);
             btnLimpiar.Visible = false;
+            btnLimpiarParcial.Visible = false;
             btnGuardar.Visible = false;
             btnImprimir.Visible = false;
             btnImagen.Visible = false;
             btnExportar.Visible = false;
             cbSedes.DataSource = null;
             cbContactos.DataSource = null;
+            cbEquipos.DataSource = null;
+            cbEquipos.Items.Clear();
             cbHerraminetas.DataSource = null;
             cbHerraminetas.Items.Clear();
             cbMarcas.DataSource = null;
@@ -330,7 +404,8 @@ namespace MIS.Vistas.Laboratorio
             cbContactos.Items.Clear();
             txtCliente.Text = "";
             txtObservacion.Text = "";
-            txtMin.Text = "";
+            txtMin.Text = "0";
+            cbTiempo.Enabled = false;
             txtMax.Text = "";
             checkPSI.Checked = true;
             checkTemperatura.Checked = true;
@@ -350,17 +425,21 @@ namespace MIS.Vistas.Laboratorio
             txtSerie.Enabled = false;
             txtDimensiones.Enabled = false;
             cbHerraminetas.Enabled = false;
+            cbEquipos.Enabled = false;
             cbMarcas.Enabled = false;
             cbModelos.Enabled = false;
             txtNro.Text = "";
             this.hidrostatica = 0;
             Combos();
+            cbMax.SelectedIndex = 4;
+            txtMax.Text = cbMax.SelectedItem.ToString();
         }
         private async void Combos()
         {
             await FG.CargarCombos(cbHerraminetas, "herramientas", "", 0);
             await FG.CargarCombos(cbMarcas, "marcas", "", 0);
             await FG.CargarCombos(cbModelos, "modelos", "", 0);
+            await FG.CargarCombos(cbEquipos, "equipos", "", 0);
         }
         private void FillComboBoxWithCOMPorts()
         {
@@ -372,18 +451,6 @@ namespace MIS.Vistas.Laboratorio
         {
             _dataTable.Clear();
             limpiar();
-        }
-        private void txtTiempo_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(txtTiempo.Text, out int tiempo) && tiempo >= 200)
-            {
-                _intervalo = tiempo;
-                _timer.Interval = _intervalo;
-                if (_serialPort != null && _serialPort.IsOpen)
-                {
-                    _serialPort.WriteLine(tiempo.ToString());
-                }
-            }
         }
         private void lbSede_Click(object sender, EventArgs e)
         {
@@ -428,6 +495,7 @@ namespace MIS.Vistas.Laboratorio
                     txtSerie.Enabled = true;
                     txtDimensiones.Enabled = true;
                     cbHerraminetas.Enabled = true;
+                    cbEquipos.Enabled = true;
                     cbMarcas.Enabled = true;
                     cbModelos.Enabled = true;
                     btnLimpiar.Visible = true;
@@ -465,6 +533,7 @@ namespace MIS.Vistas.Laboratorio
                     BuscarCliente(idcliente, "", 0, 0);
                 }
             }
+            btnBuscar_Click(null, null);
         }
         private void checkPSI_CheckedChanged(object sender, EventArgs e)
         {
@@ -514,16 +583,23 @@ namespace MIS.Vistas.Laboratorio
                 FG.ShowAlert("Seleccione la herramienta", "Alerta");
                 return;
             }
+            else if (cbEquipos.DataSource == null || (int)cbEquipos.SelectedValue == 0)
+            {
+                FG.ShowAlert("Seleccione el equipo", "Alerta");
+                return;
+            }
             else if (cbMarcas.DataSource == null || (int)cbMarcas.SelectedValue == 0)
             {
                 FG.ShowAlert("Seleccione la Marca", "Alerta");
                 return;
             }
+            /*
             else if (cbModelos.DataSource == null || (int)cbModelos.SelectedValue == 0)
             {
-                FG.ShowAlert("Seleccione la Marca", "Alerta");
+                FG.ShowAlert("Seleccione la Modelo", "Alerta");
                 return;
             }
+            */
             else if (txtSerie.Text == "")
             {
                 FG.ShowAlert("Debe agregar la Serie", "Alerta");
@@ -532,8 +608,8 @@ namespace MIS.Vistas.Laboratorio
             }
             else if (txtDimensiones.Text == "")
             {
-                FG.ShowAlert("Debe agregar las Dimensiones", "Alerta");
-                txtSerie.Focus();
+                FG.ShowAlert("Debe agregar el Parte Número", "Alerta");
+                txtDimensiones.Focus();
                 return;
             }
             else if (txtMin.Text == "" || txtMax.Text == "")
@@ -543,8 +619,9 @@ namespace MIS.Vistas.Laboratorio
             }
             int idcontacto = (int)cbContactos.SelectedValue;
             int idherramienta = (int)cbHerraminetas.SelectedValue;
+            int idequipo = (int)cbEquipos.SelectedValue;
             int idmarca = (int)cbMarcas.SelectedValue;
-            int idmodelo = (int)cbModelos.SelectedValue;
+            int idmodelo = 0; // (int)cbModelos.SelectedValue;
             string observacion = txtObservacion.Text;
             string serie = txtSerie.Text;
             string dimensiones = txtDimensiones.Text;
@@ -566,9 +643,9 @@ namespace MIS.Vistas.Laboratorio
             }
             if (_plotModel != null)
             {
-                int width = 700;
-                int height = 500;
-                var pngExporter = new PngExporter { Width = width, Height = height, Resolution = 500 };
+                int width = 1400;//2800;
+                int height = 800;//1600;
+                var pngExporter = new PngExporter { Width = width, Height = height, Resolution = 1000 };
                 using (var stream = new MemoryStream())
                 {
                     pngExporter.Export(_plotModel, stream);
@@ -584,13 +661,15 @@ namespace MIS.Vistas.Laboratorio
                 return;
             }
             HidrostaticaRepository guardar = new HidrostaticaRepository();
-            this.hidrostatica = await guardar.GuardarPrueba(this.hidrostatica, base64imagen, idcliente, idcontacto, observacion, psis, temperaturas, tiempos, serie, dimensiones, idherramienta, idmarca, idmodelo, psi_min, psi_max);
+            this.hidrostatica = await guardar.GuardarPrueba(this.hidrostatica, base64imagen, idcliente, idcontacto, observacion, psis, temperaturas, tiempos, serie, dimensiones, idherramienta, idequipo, idmarca, idmodelo, psi_min, psi_max);
             if (this.hidrostatica > 0)
             {
                 txtNro.Text = this.hidrostatica.ToString();
                 btnImprimir.Visible = true;
                 btnImagen.Visible = true;
                 btnExportar.Visible = true;
+                int numero = this.hidrostatica;
+                //GenerarImagen(numero);
                 FG.ShowMsg("PRUEBA GUARDADA CON ÉXITO", "");
             }
             else
@@ -599,59 +678,139 @@ namespace MIS.Vistas.Laboratorio
             }
 
         }
+        private void GenerarImagen(int numero)
+        {
+            if (_plotModel != null)
+            {
+                int width = 1200;
+                int height = 800;
+                var pngExporter = new PngExporter { Width = width, Height = height };
+
+                // Crear la carpeta C:\Graficas si no existe
+                string folderPath = @"C:\Graficas";
+                string filePath = Path.Combine(folderPath, numero + ".png");
+
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath); // Crea la carpeta si no existe
+                }
+
+                // Crear un Bitmap con fondo blanco
+                using (var bitmap = new Bitmap(width, height))
+                {
+                    using (var graphics = Graphics.FromImage(bitmap))
+                    {
+                        graphics.Clear(Color.White); // Establecer el fondo blanco
+                        using (var stream = new MemoryStream())
+                        {
+                            pngExporter.Export(_plotModel, stream);
+                            stream.Seek(0, SeekOrigin.Begin); // Asegúrate de que la posición del stream esté al inicio
+                            using (var image = Image.FromStream(stream))
+                            {
+                                graphics.DrawImage(image, 0, 0, width, height); // Dibujar la imagen en el Bitmap con fondo blanco
+                            }
+                        }
+                    }
+
+                    // Guardar la imagen en la carpeta C:\Graficas con el nombre 1.png, reemplazando si ya existe
+                    bitmap.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
+                    MessageBox.Show($"Imagen guardada correctamente en {filePath}.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                FG.ShowError("El modelo de la gráfica no está inicializado correctamente.", "Error");
+                return;
+            }
+        }
+
         private async void btnImprimir_Click(object sender, EventArgs e)
         {
-
             if (hidrostatica > 0)
             {
-                // Obtener el encabezado de la hidrostatica
                 HidrostaticaRepository tabla = new HidrostaticaRepository();
-                DataTable dt = await tabla.EncabezadoHidrostatica(hidrostatica);
+                DataTable dt = await tabla.EncabezadoHidrostatica(hidrostatica, dtFecha.Value.Year.ToString());
 
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    // Crear un nuevo control ReportViewer
                     ReportViewer reportViewer1 = new ReportViewer();
                     reportViewer1.ProcessingMode = ProcessingMode.Local;
-
-                    // Usar una ruta relativa para el archivo RDLC
                     string reportPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reportes", "rpHidrostatica.rdlc");
                     reportViewer1.LocalReport.ReportPath = reportPath; // Ruta al archivo .rdlc
                     reportViewer1.LocalReport.DataSources.Clear();
-
-                    // Agregar el DataTable como fuente de datos del reporte
                     ReportDataSource rds = new ReportDataSource("prueba_hidrostatica", dt);
                     reportViewer1.LocalReport.DataSources.Add(rds);
-
-                    // Configurar el tamaño y ubicación del ReportViewer
                     reportViewer1.Dock = DockStyle.Fill;
+                    reportViewer1.LocalReport.EnableExternalImages = true;
 
-                    // Agregar el ReportViewer al formulario (si aún no está agregado)
                     if (!this.Controls.Contains(reportViewer1))
                     {
                         this.Controls.Add(reportViewer1);
                     }
-
-                    // Refrescar el reporte
                     reportViewer1.RefreshReport();
-
-                    // Renderizar el reporte a PDF
                     byte[] pdfBytes = reportViewer1.LocalReport.Render(format: "PDF");
 
-                    // Mostrar el diálogo SaveFileDialog para guardar el archivo PDF
-                    SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-                    saveFileDialog1.Filter = "Archivo PDF (*.pdf)|*.pdf";
-                    saveFileDialog1.Title = "Guardar Reporte PDF";
-                    saveFileDialog1.FileName = $"Reporte_Hidrostatica_{hidrostatica}.pdf"; // Nombre sugerido para el archivo
+                    // Definir la carpeta INFORMES
+                    string informesFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "INFORMES");
+                    if (!Directory.Exists(informesFolder))
+                    {
+                        Directory.CreateDirectory(informesFolder);
+                    }
+
+                    // Guardar el archivo donde el usuario elija
+                    SaveFileDialog saveFileDialog1 = new SaveFileDialog
+                    {
+                        Filter = "Archivo PDF (*.pdf)|*.pdf",
+                        Title = "Guardar Reporte PDF",
+                        FileName = $"MIS-{dtFecha.Value.Year}-{hidrostatica.ToString("0000")}_{txtSerie.Text}.pdf"
+                    };
 
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        // Guardar el archivo PDF en la ubicación seleccionada
-                        string filePath = saveFileDialog1.FileName;
-                        File.WriteAllBytes(filePath, pdfBytes);
+                        string userFilePath = saveFileDialog1.FileName;
 
-                        // Mostrar mensaje de éxito
-                        MessageBox.Show($"Archivo PDF guardado correctamente en: {filePath}");
+                        // Guardar el archivo en la ubicación elegida por el usuario
+                        try
+                        {
+                            File.WriteAllBytes(userFilePath, pdfBytes);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"Error al guardar el archivo del usuario: {ex.Message}");
+                            return;
+                        }
+
+                        // Guardar el archivo en la carpeta INFORMES
+                        string informesFilePath = Path.Combine(informesFolder, Path.GetFileName(userFilePath));
+
+                        try
+                        {
+                            // Eliminar el archivo en la carpeta INFORMES si existe
+                            if (File.Exists(informesFilePath))
+                            {
+                                File.Delete(informesFilePath);
+                            }
+                            File.WriteAllBytes(informesFilePath, pdfBytes);
+                        }
+                        catch (IOException ioEx)
+                        {
+                            MessageBox.Show($"No se pudo eliminar el archivo en INFORMES: {ioEx.Message}");
+                            // Aquí puedes decidir si continuar o detener el proceso
+                        }
+
+                        // Abrir el archivo guardado por el usuario
+                        try
+                        {
+                            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                            {
+                                FileName = userFilePath,
+                                UseShellExecute = true
+                            });
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show($"No se pudo abrir el archivo: {ex.Message}");
+                        }
                     }
                     else
                     {
@@ -669,28 +828,14 @@ namespace MIS.Vistas.Laboratorio
             }
         }
 
+
+
         private void txtNro_TextChanged(object sender, EventArgs e)
         {
             if (txtNro.Text.Trim().Length == 0)
                 limpiar();
         }
-        private async void lbEquipo_Click(object sender, EventArgs e)
-        {
-            using (FormAgregarDescripciones form = new FormAgregarDescripciones())
-            {
-                if (form.ShowDialog() == DialogResult.OK)
-                {
-                    CombosRepository combosRepository = new CombosRepository();
-                    string texto = form.TextoIngresado;
-                    bool guardadoExitoso = await combosRepository.GuardarNuevoValor("herramientas", texto, "");
-                    if (guardadoExitoso)
-                    {
-                        await FG.CargarCombos(cbHerraminetas, "herramientas", "", 0);
-                        cbHerraminetas.SelectedItem = texto;
-                    }
-                }
-            }
-        }
+
         private async void lbMarca_Click(object sender, EventArgs e)
         {
             using (FormAgregarDescripciones form = new FormAgregarDescripciones())
@@ -749,7 +894,7 @@ namespace MIS.Vistas.Laboratorio
                 int hidrostatica;
                 if (int.TryParse(txtNro.Text, out hidrostatica))
                 {
-                    Buscar(hidrostatica);
+                    Buscar(hidrostatica, dtFecha.Value.Year.ToString());
                 }
                 else
                 {
@@ -758,10 +903,10 @@ namespace MIS.Vistas.Laboratorio
             }
         }
 
-        private async void Buscar(int numero)
+        private async void Buscar(int numero, string fecha)
         {
             HidrostaticaRepository buscar = new HidrostaticaRepository();
-            DataRow data = await buscar.Buscar(numero);
+            DataRow data = await buscar.Buscar(numero, fecha);
             if (data == null)
             {
                 limpiar();
@@ -771,6 +916,9 @@ namespace MIS.Vistas.Laboratorio
             cbHerraminetas.DataSource = null;
             cbHerraminetas.Items.Clear();
             await FG.CargarCombos(cbHerraminetas, "herramientas", "", (int)data["idherramienta"]);
+            cbEquipos.DataSource = null;
+            cbEquipos.Items.Clear();
+            await FG.CargarCombos(cbEquipos, "equipos", "", (int)data["idequipo"]);
             cbMarcas.DataSource = null;
             cbMarcas.Items.Clear();
             await FG.CargarCombos(cbMarcas, "marcas", "", (int)data["idmarca"]);
@@ -824,6 +972,7 @@ namespace MIS.Vistas.Laboratorio
             btnExportar.Visible = true;
             btnLimpiar.Visible = true;
             btnGuardar.Visible = true;
+            btnLimpiarParcial.Visible = true;
 
         }
         private void LlenarGrafico(TimeSpan[] tiempoInSeconds, double[] psiArray, double[] temperaturaArray)
@@ -950,7 +1099,168 @@ namespace MIS.Vistas.Laboratorio
             }
         }
 
+        private void cbTiempo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(cbTiempo.SelectedItem.ToString(), out int tiempo) && tiempo >= 1000)
+            {
+                _intervalo = tiempo;
+                _timer.Interval = _intervalo;
 
+                if (_serialPort != null && _serialPort.IsOpen)
+                {
+                    _serialPort.WriteLine(tiempo.ToString());
+                }
+            }
+        }
 
+        private async void lbHerramienta_Click(object sender, EventArgs e)
+        {
+            using (FormAgregarDescripciones form = new FormAgregarDescripciones())
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    CombosRepository combosRepository = new CombosRepository();
+                    string texto = form.TextoIngresado;
+                    bool guardadoExitoso = await combosRepository.GuardarNuevoValor("herramientas", texto, "");
+                    if (guardadoExitoso)
+                    {
+                        await FG.CargarCombos(cbHerraminetas, "herramientas", "", 0);
+                        cbHerraminetas.SelectedItem = texto;
+                    }
+                }
+            }
+        }
+
+        private async void lbEquipos_Click(object sender, EventArgs e)
+        {
+            using (FormAgregarDescripciones form = new FormAgregarDescripciones())
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    CombosRepository combosRepository = new CombosRepository();
+                    string texto = form.TextoIngresado;
+                    bool guardadoExitoso = await combosRepository.GuardarNuevoValor("equipos", texto, "");
+                    if (guardadoExitoso)
+                    {
+                        await FG.CargarCombos(cbEquipos, "equipos", "", 0);
+                        cbEquipos.SelectedItem = texto;
+                    }
+                }
+            }
+        }
+
+        private async void DatosConsulta()
+        {
+            txtCNro.Text = string.Empty;
+            dtpCDesde.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            dtpCHasta.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month));
+            await FG.CargarCombos(cbCCliente, "clientes", "", 0);
+        }
+
+        private async void Consultar()
+        {
+            tablaConsulta.DataSource = null;
+
+            int idcliente = (int)cbCCliente.SelectedValue > 0 ? (int)cbCCliente.SelectedValue : 0;
+            HidrostaticaRepository repository = new HidrostaticaRepository();
+            DataTable tabla = await repository.Consultar(txtCNro.Text, idcliente, dtpCDesde.Value.ToString("dd-MM-yyyy"), dtpCHasta.Value.ToString("dd-MM-yyyy"), txtCSerie.Text);
+
+            if (tabla != null)
+            {
+                tablaConsulta.DataSource = tabla;
+                tablaConsulta.Visible = false;
+                if (tablaConsulta.Rows.Count > 0)
+                {
+                    tablaConsulta.Visible = true;
+                    tablaConsulta.CurrentCell = null;
+                    tablaConsulta.DefaultCellStyle.ForeColor = Color.FromArgb(50, 50, 50);
+                    tablaConsulta.Font = new Font("Calibri", 12F, FontStyle.Bold);
+                    tablaConsulta.Columns["id"].Visible = false;
+                    tablaConsulta.Columns["numero"].Visible = false;
+                    tablaConsulta.Columns["fila"].HeaderText = "#";
+                    tablaConsulta.Columns["prueba"].HeaderText = "N° Prueba";
+                    tablaConsulta.Columns["anio"].HeaderText = "Año";
+                    tablaConsulta.Columns["cliente"].HeaderText = "Cliente";
+                    tablaConsulta.Columns["equipo"].HeaderText = "Equipo Patron";
+                    tablaConsulta.Columns["herramienta"].HeaderText = "Herramienta";
+                    tablaConsulta.Columns["serie"].HeaderText = "Serie";
+                    tablaConsulta.Columns["parte"].HeaderText = "Parte";
+                    tablaConsulta.Columns["fecha"].HeaderText = "Fecha";
+                    tablaConsulta.Columns["registrado_por"].HeaderText = "Registrado por";
+                    tablaConsulta.Columns["registrado_por"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                    tablaConsulta.Columns["observacion"].HeaderText = "Observación";
+                    tablaConsulta.Columns["observacion"].DefaultCellStyle.WrapMode = DataGridViewTriState.True;
+                    tablaConsulta.AllowUserToOrderColumns = false;
+                }
+            }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            Consultar();
+        }
+
+        private void tablaConsulta_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow selectedRow = tablaConsulta.CurrentRow;
+
+            Buscar(Convert.ToInt32(selectedRow.Cells["numero"].Value), selectedRow.Cells["anio"].Value.ToString());
+            tcGeneral.SelectedTab = tpRegistro;
+        }
+
+        private void cbMax_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtMax.Text = cbMax.SelectedItem.ToString();
+        }
+
+        private void lbCliente_Click(object sender, EventArgs e)
+        {
+            if (hidrostatica > 0)
+            {
+                using (FormBuscarCliente form = new FormBuscarCliente())
+                {
+                    if (form.ShowDialog() == DialogResult.OK)
+                    {
+                        idcliente = form.idcliente;
+                        if (idcliente > 0)
+                        {
+                            CambioCliente(idcliente, hidrostatica, dtFecha.Value.Year.ToString());
+                            Buscar(hidrostatica, dtFecha.Value.Year.ToString());
+                        }
+                        else
+                            MessageBox.Show("Error Comucarse con el administrador de sistemas (3025974171)");
+
+                    }
+                }
+
+            }
+
+        }
+        private async void CambioCliente(int idlciente, int prueba, string anio)
+        {
+            HidrostaticaRepository cambio = new HidrostaticaRepository();
+            await cambio.CambioCliente(idcliente, prueba, anio);
+        }
+
+        private void btnLimpiarParcial_Click(object sender, EventArgs e)
+        {
+            if (hidrostatica <= 0){
+                _dataTable.Clear();
+                txtPresion.Text = "NaN";
+                txtTemperatura.Text = "NaN";
+                if (_lineaTemperatura != null)
+                {
+                    _lineaTemperatura.Points.Clear();
+                }
+                if (_lineaVariable != null)
+                {
+                    _lineaVariable.Points.Clear();
+                }
+                Grafica.InvalidatePlot(true);
+            } else
+            {
+                MessageBox.Show("Imposible limpiar en esta condición (3025974171)");
+            }
+        }
     }
 }

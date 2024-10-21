@@ -160,8 +160,8 @@ namespace MIS.Modelos
                         insercion = $"insert into {tabla} (descripcion) values('{texto}')";
                         break;
                     case "equipos":
-                        busqueda = $"select count(*) from {tabla} where descripcion = '{texto}' and idmagnitud = {id}";
-                        insercion = $"insert into {tabla} (descripcion, idmagnitud) values('{texto}', {id})";
+                        busqueda = $"select count(*) from {tabla} where descripcion = '{texto}'";
+                        insercion = $"insert into {tabla} (descripcion, idmagnitud) values('{texto}', 0)";
                         break;
                     case "ubicaciones":
                         busqueda = $"select count(*) from {tabla} where descripcion = '{texto}'";

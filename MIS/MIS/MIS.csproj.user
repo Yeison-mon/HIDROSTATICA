@@ -11,6 +11,9 @@
     <Compile Update="Vistas\Configuracion\FormClientes.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Vistas\Configuracion\FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Vistas\FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>

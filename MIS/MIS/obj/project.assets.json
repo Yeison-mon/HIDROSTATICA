@@ -5899,19 +5899,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PROGRAMADOR\\.nuget\\packages\\": {}
+    "C:\\Users\\ATS 2\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PROGRAMADOR\\Downloads\\HIDROSTATICA\\MIS\\MIS\\MIS.csproj",
+      "projectUniqueName": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\MIS.csproj",
       "projectName": "MIS",
-      "projectPath": "C:\\Users\\PROGRAMADOR\\Downloads\\HIDROSTATICA\\MIS\\MIS\\MIS.csproj",
-      "packagesPath": "C:\\Users\\PROGRAMADOR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PROGRAMADOR\\Downloads\\HIDROSTATICA\\MIS\\MIS\\obj\\",
+      "projectPath": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\MIS.csproj",
+      "packagesPath": "C:\\Users\\ATS 2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PROGRAMADOR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ATS 2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6130,11 +6135,21 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.Text.Json\" 8.0.3 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
