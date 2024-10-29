@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\",
+  "WorkspaceRootPath": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\ats 2\\desktop\\hidrostatica\\mis\\mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\ats 2\\desktop\\hidrostatica\\mis\\mis\\reportes\\rphidrostatica.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\chiri\\onedrive\\documentos\\github\\hidrostatica\\mis\\mis\\reportes\\rphidrostatica.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
       "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\reportes\\rphidrostatica.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\ats 2\\desktop\\hidrostatica\\mis\\mis\\modelos\\laboratorio\\hidrostaticarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\chiri\\onedrive\\documentos\\github\\hidrostatica\\mis\\mis\\modelos\\laboratorio\\hidrostaticarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\modelos\\laboratorio\\hidrostaticarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\ats 2\\desktop\\hidrostatica\\mis\\mis\\reportes\\dshidrostatica.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\chiri\\onedrive\\documentos\\github\\hidrostatica\\mis\\mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\chiri\\onedrive\\documentos\\github\\hidrostatica\\mis\\mis\\reportes\\dshidrostatica.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\reportes\\dshidrostatica.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\vistas\\laboratorio\\formsensor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\ats 2\\desktop\\hidrostatica\\mis\\mis\\modelos\\configuracion\\combosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|c:\\users\\chiri\\onedrive\\documentos\\github\\hidrostatica\\mis\\mis\\modelos\\configuracion\\combosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CFCC012B-12DC-4349-9FA5-6A8334546693}|MIS\\MIS.csproj|solutionrelative:mis\\modelos\\configuracion\\combosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,35 +54,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "dsHidrostatica.xsd",
-              "DocumentMoniker": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Reportes\\dsHidrostatica.xsd",
-              "RelativeDocumentMoniker": "MIS\\Reportes\\dsHidrostatica.xsd",
-              "ToolTip": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Reportes\\dsHidrostatica.xsd",
-              "RelativeToolTip": "MIS\\Reportes\\dsHidrostatica.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-10-16T18:13:00.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HidrostaticaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Laboratorio\\HidrostaticaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Laboratorio\\HidrostaticaRepository.cs",
               "RelativeDocumentMoniker": "MIS\\Modelos\\Laboratorio\\HidrostaticaRepository.cs",
-              "ToolTip": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Laboratorio\\HidrostaticaRepository.cs",
+              "ToolTip": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Laboratorio\\HidrostaticaRepository.cs",
               "RelativeToolTip": "MIS\\Modelos\\Laboratorio\\HidrostaticaRepository.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAgwKYAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAgwKMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T02:08:53.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "rpHidrostatica.rdlc [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Reportes\\rpHidrostatica.rdlc",
+              "DocumentMoniker": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Reportes\\rpHidrostatica.rdlc",
               "RelativeDocumentMoniker": "MIS\\Reportes\\rpHidrostatica.rdlc",
-              "ToolTip": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Reportes\\rpHidrostatica.rdlc [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Reportes\\rpHidrostatica.rdlc [Dise\u00F1o]",
               "RelativeToolTip": "MIS\\Reportes\\rpHidrostatica.rdlc [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
               "WhenOpened": "2024-10-11T15:31:12.681Z",
@@ -92,9 +81,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "FormSensor.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs",
+              "DocumentMoniker": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs",
               "RelativeDocumentMoniker": "MIS\\Vistas\\Laboratorio\\FormSensor.cs",
-              "ToolTip": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs [Design]",
+              "ToolTip": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs [Design]",
               "RelativeToolTip": "MIS\\Vistas\\Laboratorio\\FormSensor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T02:49:07.731Z",
@@ -102,24 +91,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormSensor.cs",
-              "DocumentMoniker": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs",
+              "DocumentMoniker": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs",
               "RelativeDocumentMoniker": "MIS\\Vistas\\Laboratorio\\FormSensor.cs",
-              "ToolTip": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs",
+              "ToolTip": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Vistas\\Laboratorio\\FormSensor.cs",
               "RelativeToolTip": "MIS\\Vistas\\Laboratorio\\FormSensor.cs",
-              "ViewState": "AgIAAPUCAAAAAAAAAAAgwAUDAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAOwCAAAAAAAAAAAYwPwCAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T02:49:00.701Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dsHidrostatica.xsd",
+              "DocumentMoniker": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Reportes\\dsHidrostatica.xsd",
+              "RelativeDocumentMoniker": "MIS\\Reportes\\dsHidrostatica.xsd",
+              "ToolTip": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Reportes\\dsHidrostatica.xsd",
+              "RelativeToolTip": "MIS\\Reportes\\dsHidrostatica.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-10-16T18:13:00.563Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "CombosRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Configuracion\\CombosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Configuracion\\CombosRepository.cs",
               "RelativeDocumentMoniker": "MIS\\Modelos\\Configuracion\\CombosRepository.cs",
-              "ToolTip": "C:\\Users\\ATS 2\\Desktop\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Configuracion\\CombosRepository.cs",
+              "ToolTip": "C:\\Users\\chiri\\OneDrive\\Documentos\\GitHub\\HIDROSTATICA\\MIS\\MIS\\Modelos\\Configuracion\\CombosRepository.cs",
               "RelativeToolTip": "MIS\\Modelos\\Configuracion\\CombosRepository.cs",
               "ViewState": "AgIAAI4AAAAAAAAAAAAAwJ4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

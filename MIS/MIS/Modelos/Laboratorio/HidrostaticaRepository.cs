@@ -106,101 +106,104 @@ namespace MIS.Modelos.Laboratorio
         {
             string query = $@"
                     WITH prueba AS (
-                        SELECT *
-                        FROM prueba_hidrostatica ph
-                        WHERE ph.numero = {numero} and to_char(ph.fecha, 'YYYY') = '{anio}'
-                    ),
-                    valores_validos AS (
-                        SELECT unnest(phd.psi) AS valor, generate_series(1, array_length(phd.psi, 1)) AS pos,
-                               unnest(phd.temperatura) AS temperatura  -- Asumiendo que tienes un campo ""temperaturas""
-                        FROM prueba_hidrostatica_detalle phd
-                        JOIN prueba p ON p.id = phd.idprueba
-                    ),
-                    primer_valor AS (
-                        SELECT MIN(pos) AS primer_pos
-                        FROM valores_validos
-                        WHERE valor > (SELECT psi_max FROM prueba)
-                    ),
-                    ultimo_valor AS (
-                        SELECT MAX(pos) AS ultimo_pos
-                        FROM valores_validos
-                        WHERE valor > (SELECT psi_max FROM prueba)
-                    ),
-                    valores_en_rango AS (
-                        SELECT v.valor, v.temperatura
-                        FROM valores_validos v
-                        WHERE v.pos >= (SELECT primer_pos FROM primer_valor)
-                          AND v.pos <= (SELECT ultimo_pos FROM ultimo_valor)
-                    ),
-                    presion_final AS (
-                        SELECT valor AS final_presion
-                        FROM valores_validos
-                        WHERE pos = (SELECT ultimo_pos FROM ultimo_valor)
-                    ),
-                    promedio_psi AS (
-                        SELECT COALESCE(ROUND(AVG(valor)), 0)::int AS avg_psi
-                        FROM valores_en_rango
-                    ),
-                    promedio_temperatura AS (
-                        SELECT COALESCE(ROUND(AVG(temperatura)), 0)::int AS avg_temp
-                        FROM valores_en_rango
-                    ),
-                    psi_valores AS (
-                        SELECT 
-                            (SELECT valor FROM valores_validos WHERE pos = (SELECT ultimo_pos FROM ultimo_valor)) AS psi_ultimo_pos,
-                            (SELECT valor FROM valores_validos WHERE pos = (SELECT primer_pos FROM primer_valor)) AS psi_primer_pos,
-                            (SELECT ultimo_pos FROM ultimo_valor) + 1 AS pos_ultima_plus_1
-                    ),
-                    temperaturas_extremas AS (
-                        SELECT 
-                            MIN(temperatura) AS tem_min, 
-                            MAX(temperatura) AS tem_max
-                        FROM valores_validos
-                        WHERE pos = (SELECT primer_pos FROM primer_valor)
-                           OR pos = (SELECT ultimo_pos FROM ultimo_valor)
-                    )
-                    SELECT
-                        c.nombrecompleto AS cliente,
-                        '{DateTime.Now.Year}-' || TRIM(TO_CHAR(ph.numero, '0000')) AS numero,
-                        ci.descripcion AS lugar,
-                        TO_CHAR(ph.fecha, 'YYYY-MM-DD') AS fecha,
-                        (SELECT MAX(valor) FROM valores_validos) AS inicial,
-                        (SELECT valor FROM valores_validos WHERE pos = (SELECT ultimo_pos FROM ultimo_valor)) AS final,
-                        ROUND(EXTRACT(EPOCH FROM (phd.tiempo[ARRAY_LENGTH(phd.tiempo, 1)] - phd.tiempo[1])) / 60.0, 2)::TEXT || ' min' AS tiempo,
-                        ru.nombrecompleto AS usuario,
-                        ph.observacion,
-                        ph.grafica,
-                        '' AS tipo_servicio,
-                        '' AS variables,
-                        h.descripcion AS herramienta,
-                        (SELECT tem_min FROM temperaturas_extremas) AS tem_min,  -- Cambiando por el valor mínimo de temperatura
-                        (SELECT tem_max FROM temperaturas_extremas) AS tem_max,  -- Cambiando por el valor máximo de temperatura
-                        m.descripcion AS marca,
-                        e.descripcion AS equipo,
-                        ph.serie,
-                        ph.dimensiones,
-                        (SELECT avg_psi FROM promedio_psi) AS promedio_psi,
-                        (SELECT avg_temp FROM promedio_temperatura) AS promedio_tem,  -- Incluyendo el promedio de temperatura
-                        (SELECT primer_pos FROM primer_valor) AS primera_posicion,
-                        (SELECT ultimo_pos FROM ultimo_valor) AS ultima_posicion,
-                        (SELECT psi_ultimo_pos FROM psi_valores) AS psi_ultimo_pos,
-                        (SELECT psi_primer_pos FROM psi_valores) AS psi_primer_pos,
-                        (SELECT pos_ultima_plus_1 FROM psi_valores) AS pos_ultima_plus_1,
-                        ROUND(ABS((SELECT avg_psi FROM promedio_psi) - (SELECT final_presion FROM presion_final))) AS delta,
-                        CASE 
-                            WHEN (SELECT avg_psi FROM promedio_psi) > 0 THEN
-                                ROUND(CAST((ABS((SELECT avg_psi FROM promedio_psi) - (SELECT final_presion FROM presion_final)) * 100.0) / (SELECT avg_psi FROM promedio_psi) AS numeric), 2)
-                            ELSE 0
-                        END AS error_psi
-                    FROM prueba_hidrostatica ph
-                    INNER JOIN clientes c ON c.id = ph.idcliente
-                    INNER JOIN ciudad ci ON ci.id = c.idciudad 
-                    INNER JOIN prueba_hidrostatica_detalle phd ON phd.idprueba = ph.id
-                    INNER JOIN seguridad.rbac_usuarios ru ON ru.id = ph.idusuario
-                    INNER JOIN herramientas h ON h.id = ph.idherramienta
-                    INNER JOIN marcas m ON m.id = ph.idmarca
-                    INNER JOIN equipos e ON e.id = ph.idequipo
-                WHERE ph.numero = {numero} and to_char(ph.fecha, 'YYYY') = '{anio}';";
+    SELECT *
+    FROM prueba_hidrostatica ph
+    WHERE ph.numero = {numero} and to_char(ph.fecha, 'YYYY') = '{anio}'
+),
+valores_validos AS (
+    SELECT unnest(phd.psi) AS valor, generate_series(1, array_length(phd.psi, 1)) AS pos,
+           unnest(phd.temperatura) AS temperatura  -- Asumiendo que tienes un campo ""temperaturas""
+    FROM prueba_hidrostatica_detalle phd
+    JOIN prueba p ON p.id = phd.idprueba
+),
+primer_valor AS (
+    SELECT MIN(pos) AS primer_pos
+    FROM valores_validos
+    WHERE valor > (SELECT psi_max FROM prueba)
+),
+ultimo_valor AS (
+    SELECT MAX(pos) AS ultimo_pos
+    FROM valores_validos
+    WHERE valor > (SELECT psi_max FROM prueba)
+),
+valores_en_rango AS (
+    SELECT v.valor, v.temperatura
+    FROM valores_validos v
+    WHERE v.pos >= (SELECT primer_pos FROM primer_valor)
+      AND v.pos <= GREATEST(1, (SELECT ultimo_pos FROM ultimo_valor) + 5)
+),
+presion_final AS (
+    SELECT valor AS final_presion
+    FROM valores_validos
+    WHERE pos = GREATEST(1, (SELECT ultimo_pos FROM ultimo_valor) - 5)  -- Ajuste para reflejar el valor en ultimo_pos - 5
+),
+promedio_psi AS (
+    SELECT COALESCE(ROUND(AVG(valor)), 0)::int AS avg_psi
+    FROM valores_en_rango
+),
+promedio_temperatura AS (
+    SELECT COALESCE(ROUND(AVG(temperatura)), 0)::int AS avg_temp
+    FROM valores_en_rango
+),
+psi_valores AS (
+    SELECT 
+        (SELECT valor FROM valores_validos WHERE pos = (SELECT ultimo_pos FROM ultimo_valor)) AS psi_ultimo_pos,
+        (SELECT valor FROM valores_validos WHERE pos = (SELECT primer_pos FROM primer_valor)) AS psi_primer_pos,
+        (SELECT ultimo_pos FROM ultimo_valor) + 1 AS pos_ultima_plus_1
+),
+temperaturas_extremas AS (
+    SELECT 
+        MIN(temperatura) AS tem_min, 
+        MAX(temperatura) AS tem_max
+    FROM valores_validos
+    WHERE pos = (SELECT primer_pos FROM primer_valor)
+       OR pos = (SELECT ultimo_pos FROM ultimo_valor)
+)
+SELECT
+    c.nombrecompleto AS cliente,
+    '{DateTime.Now.Year}-' || TRIM(TO_CHAR(ph.numero, '0000')) AS numero,
+    ci.descripcion AS lugar,
+    TO_CHAR(ph.fecha, 'YYYY-MM-DD') AS fecha,
+    (SELECT MAX(valor) FROM valores_validos) AS inicial,
+    (SELECT valor 
+     FROM valores_validos 
+     WHERE pos <= GREATEST(1, (SELECT ultimo_pos FROM ultimo_valor) - 5)
+     ORDER BY pos DESC LIMIT 1) AS final,  -- Aquí ajustamos la selección del valor final
+    ROUND(EXTRACT(EPOCH FROM (phd.tiempo[ARRAY_LENGTH(phd.tiempo, 1)] - phd.tiempo[1])) / 60.0, 2)::TEXT || ' min' AS tiempo,
+    ru.nombrecompleto AS usuario,
+    ph.observacion,
+    ph.grafica,
+    '' AS tipo_servicio,
+    '' AS variables,
+    h.descripcion AS herramienta,
+    (SELECT tem_min FROM temperaturas_extremas) AS tem_min,  -- Valor mínimo de temperatura
+    (SELECT tem_max FROM temperaturas_extremas) AS tem_max,  -- Valor máximo de temperatura
+    m.descripcion AS marca,
+    e.descripcion AS equipo,
+    ph.serie,
+    ph.dimensiones,
+    (SELECT avg_psi FROM promedio_psi) AS promedio_psi,
+    (SELECT avg_temp FROM promedio_temperatura) AS promedio_tem,  -- Incluyendo el promedio de temperatura
+    (SELECT primer_pos FROM primer_valor) AS primera_posicion,
+    (SELECT ultimo_pos FROM ultimo_valor) AS ultima_posicion,
+    (SELECT psi_ultimo_pos FROM psi_valores) AS psi_ultimo_pos,
+    (SELECT psi_primer_pos FROM psi_valores) AS psi_primer_pos,
+    (SELECT pos_ultima_plus_1 FROM psi_valores) AS pos_ultima_plus_1,
+    ROUND(ABS((SELECT avg_psi FROM promedio_psi) - (SELECT final_presion FROM presion_final)))::text || ' PSI' AS delta,  -- Calculamos delta con la final_presion ajustada
+    CASE 
+        WHEN (SELECT avg_psi FROM promedio_psi) > 0 THEN
+            ROUND(CAST((ABS((SELECT avg_psi FROM promedio_psi) - (SELECT final_presion FROM presion_final)) * 100.0) / (SELECT avg_psi FROM promedio_psi) AS numeric), 2)
+        ELSE 0
+    END AS error_psi  -- Calculamos error_psi con la final_presion ajustada
+FROM prueba_hidrostatica ph
+INNER JOIN clientes c ON c.id = ph.idcliente
+INNER JOIN ciudad ci ON ci.id = c.idciudad 
+INNER JOIN prueba_hidrostatica_detalle phd ON phd.idprueba = ph.id
+INNER JOIN seguridad.rbac_usuarios ru ON ru.id = ph.idusuario
+INNER JOIN herramientas h ON h.id = ph.idherramienta
+INNER JOIN marcas m ON m.id = ph.idmarca
+INNER JOIN equipos e ON e.id = ph.idequipo
+WHERE ph.numero = {numero} and to_char(ph.fecha, 'YYYY') = '{anio}'";
             return await dbHelper.ExecuteQueryAsync(query);
         }
 

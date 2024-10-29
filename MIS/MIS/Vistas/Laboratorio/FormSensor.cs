@@ -762,7 +762,7 @@ namespace MIS.Vistas.Laboratorio
                     {
                         Filter = "Archivo PDF (*.pdf)|*.pdf",
                         Title = "Guardar Reporte PDF",
-                        FileName = $"MIS-{dtFecha.Value.Year}-{hidrostatica.ToString("0000")}_{txtSerie.Text}.pdf"
+                        FileName = $"BCA-{dtFecha.Value.Year}-{hidrostatica.ToString("0000")}_{txtSerie.Text}.pdf"
                     };
 
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)

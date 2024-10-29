@@ -1373,7 +1373,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!fecha.Value, "prueba_hidrostatica")</Value>
+                    <Value>2024-10-24</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -1726,7 +1726,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="MIS-" &amp; First(Fields!numero.Value, "prueba_hidrostatica")</Value>
+                      <Value>="BCA-" &amp; First(Fields!numero.Value, "prueba_hidrostatica")</Value>
                       <Style>
                         <FontWeight>Bold</FontWeight>
                         <Color>White</Color>
@@ -1817,7 +1817,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.14111cm</Top>
+          <Top>0.1411cm</Top>
           <Left>0.87519cm</Left>
           <Height>1.68451cm</Height>
           <Width>17.53416cm</Width>

@@ -729,3 +729,4 @@ C:\Users\ATS 2\Desktop\HIDROSTATICA\MIS\MIS\obj\Debug\net8.0-windows7.0\refint\M
 C:\Users\ATS 2\Desktop\HIDROSTATICA\MIS\MIS\obj\Debug\net8.0-windows7.0\MIS.pdb
 C:\Users\ATS 2\Desktop\HIDROSTATICA\MIS\MIS\obj\Debug\net8.0-windows7.0\MIS.genruntimeconfig.cache
 C:\Users\ATS 2\Desktop\HIDROSTATICA\MIS\MIS\obj\Debug\net8.0-windows7.0\ref\MIS.dll
+C:\Users\chiri\OneDrive\Documentos\GitHub\HIDROSTATICA\MIS\MIS\obj\Debug\net8.0-windows7.0\MIS.Vistas.Configuracion.FormUsuarios.resources
